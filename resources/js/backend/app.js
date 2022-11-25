@@ -55,4 +55,4 @@ import "./components/mobile-menu";
 import "./components/side-menu-tooltip";
 import "./components/new-dark-mode-switcher";
 
-// import "../../../vendor/wire-elements/modal/resources/js/modal";
+import "../../../vendor/wire-elements/modal/resources/js/modal";

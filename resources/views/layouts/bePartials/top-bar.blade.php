@@ -1,6 +1,6 @@
 <div class="float-right sm:float-none top-bar">
     <!-- BEGIN: Breadcrumb -->
-    {{ '$breadcrumb' }}
+    {{ $breadcrumb }}
     <!-- END: Breadcrumb -->
     <!-- BEGIN: Dark Mode Switcher-->
     <div class="mr-4">
