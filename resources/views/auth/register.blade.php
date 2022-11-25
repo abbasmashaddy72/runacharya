@@ -1,60 +1,57 @@
 <x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+    @slot('left')
+        <img alt="Larvel Tailwind HTML Admin Template" class="w-1/2 -mt-16 -intro-x"
+            src="{{ asset('dist/images/illustration.svg') }}">
+        <div class="w-4/6 mt-10 text-4xl font-medium leading-tight text-white -intro-x">
+            {{ __('A few more clicks to sign in to your account.') }}</div>
+        <div class="mt-5 text-lg text-white -intro-x text-opacity-70 dark:text-slate-400">
+            {{ __('Manage your Hospitals/Clinics in one place') }}</div>
+    @endslot
+    @slot('right')
+        <h2 class="text-2xl font-bold text-center intro-x xl:text-3xl xl:text-left">{{ __('Sign In') }}</h2>
 
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
+        <div class="mt-2 text-center intro-x text-slate-400 xl:hidden">
+            {{ __('A few more clicks to sign in to your account.') }}{{ __('Manage your Hospitals/Clinics in one place') }}
+        </div>
 
-            <!-- Name -->
-            <div>
-                <x-input-label for="name" :value="__('Name')" />
-                <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
-                <x-input-error :messages="$errors->get('name')" class="mt-2" />
-            </div>
+        <div class="mt-8 intro-x">
 
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-input-label for="email" :value="__('Email')" />
-                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-                <x-input-error :messages="$errors->get('email')" class="mt-2" />
-            </div>
+            <!-- Session Status -->
+            <x-auth.session-status class="mb-4" :status="session('status')" />
 
-            <!-- Password -->
-            <div class="mt-4">
-                <x-input-label for="password" :value="__('Password')" />
+            <!-- Validation Errors -->
+            <x-auth.validation-errors class="mb-4" :errors="$errors" />
 
-                <x-text-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
+            <x-form action="{{ route('register') }}">
 
-                <x-input-error :messages="$errors->get('password')" class="mt-2" />
-            </div>
+                <x-label>{{ __('Name') }}
+                    <x-input name="name" label="{{ __('Name') }}" type="text" required autofocus class="mt-2" />
+                </x-label>
 
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+                <x-label>{{ __('Email') }}
+                    <x-input name="email" label="{{ __('Email') }}" type="email" required class="mt-2" />
+                </x-label>
 
-                <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
+                <x-label>{{ __('Password') }}
+                    <x-input name="password" label="{{ __('Password') }}" type="password" required class="mt-2"
+                        autocomplete="new-password" />
+                </x-label>
 
-                <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-            </div>
+                <x-label>{{ __('Confirm Password') }}
+                    <x-input name="password_confirmation" label="{{ __('Confirm Password') }}" type="password" required
+                        class="mt-2" />
+                </x-label>
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
+                <div class="mt-5 text-center intro-x xl:mt-8 xl:text-left">
 
-                <x-primary-button class="ml-4">
-                    {{ __('Register') }}
-                </x-primary-button>
-            </div>
-        </form>
-    </x-auth-card>
+                    <button class="w-full px-2 py-2 mr-auto align-top btn btn-primary xl:w-32 xl:mr-3" id="btn-login"
+                        type="submit">{{ __('Sign Up') }}</button>
+
+                    <a class="w-full px-2 py-2 mt-3 align-top btn btn-outline-secondary xl:w-40 xl:mt-0"
+                        href="{{ route('login') }}">{{ __('Already Registered?') }}</a>
+                </div>
+
+            </x-form>
+        </div>
+    @endslot
 </x-guest-layout>

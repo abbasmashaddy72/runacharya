@@ -117,6 +117,14 @@
 @import './components/_notification-content.css';
 @import './components/_notification.css';
 
+/*
+Form Component
+*/
+@import '../../../vendor/rawilk/laravel-form-components/resources/css/index.css';
+@import 'filepond/dist/filepond.min.css';
+@import 'flatpickr/dist/flatpickr.min.css';
+
+
 [x-cloak] {
     display: none;
 }
