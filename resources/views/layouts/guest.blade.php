@@ -30,11 +30,11 @@
         <div class="block grid-cols-2 gap-4 xl:grid">
             <!-- BEGIN: Login Info -->
             <div class="flex-col hidden min-h-screen xl:flex">
-                <x-auth.logo class="items-center pt-5 -intro-x">
+                <x-logo class="items-center pt-5 -intro-x">
                     <span class="ml-3 text-lg text-white">
                         {{ config('app.name', 'Laravel') }}
                     </span>
-                </x-auth.logo>
+                </x-logo>
                 <div class="my-auto">
                     {{ $left }}
                 </div>

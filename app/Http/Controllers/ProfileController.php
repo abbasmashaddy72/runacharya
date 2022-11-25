@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Redirect;
 
 class ProfileController extends Controller
 {
+    public function __construct()
+    {
+        view()->share('title', 'Profile');
+    }
     /**
      * Display the user's profile form.
      *

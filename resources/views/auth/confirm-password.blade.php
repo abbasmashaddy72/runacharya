@@ -8,7 +8,7 @@
             {{ __('Manage your Hospitals/Clinics in one place') }}</div>
     @endslot
     @slot('right')
-        <h2 class="text-2xl font-bold text-center intro-x xl:text-3xl xl:text-left">{{ __('Sign In') }}</h2>
+        <h2 class="text-2xl font-bold text-center intro-x xl:text-3xl xl:text-left">{{ __('Confirm Password') }}</h2>
 
         <div class="mt-2 text-center intro-x text-slate-400 xl:hidden">
             {{ __('A few more clicks to sign in to your account.') }}{{ __('Manage your Hospitals/Clinics in one place') }}
