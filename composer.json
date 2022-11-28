@@ -15,11 +15,15 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "maatwebsite/excel": "^3.1",
+        "mediconesystems/livewire-datatables": "^0.10.0",
+        "psr/simple-cache": "^1.0",
         "rawilk/laravel-breadcrumbs": "^4.0",
         "rawilk/laravel-form-components": "^7.1",
         "wire-elements/modal": "^1.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.7",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.15",
         "laravel/pint": "^1.0",

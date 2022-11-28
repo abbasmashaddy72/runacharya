@@ -43,26 +43,6 @@
             <!-- BEGIN: Top Bar -->
             @include('layouts.bePartials.top-bar')
             <!-- END: Top Bar -->
-            <div class="flex items-center mt-8">
-                <h2 class="mr-auto text-lg font-medium">
-                    @if (getRouteAction() == 'create')
-                        {{ __('Create') }} {{ $title }}
-                    @elseif(getRouteAction() == 'edit')
-                        {{ __('Edit') }} {{ $title }}
-                    @elseif(getRouteAction() == 'show')
-                        {{ __('Show') }} {{ $title }}
-                    @else
-                        {{ $title }}
-                    @endif
-                </h2>
-                @if (Route::currentRouteName() != 'dashboard')
-                    <div class="flex w-full mt-4 sm:w-auto sm:mt-0">
-                        <a href="{{ $top_right_url ?? url()->previous() }}"
-                            class="mr-2 shadow-md btn btn-primary">{{ $top_right_text ?? __('Back') }}</a>
-                    </div>
-                @endif
-            </div>
-
             {{ $slot }}
         </div>
 

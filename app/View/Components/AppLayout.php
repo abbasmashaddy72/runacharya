@@ -35,6 +35,11 @@ class AppLayout extends Component
                 'route_name' => 'dashboard',
             ],
             'devider',
+            'users' => [
+                'icon' => 'user',
+                'title' => 'Users',
+                'route_name' => 'users.index',
+            ],
         ];
     }
 
