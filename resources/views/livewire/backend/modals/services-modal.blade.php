@@ -23,9 +23,16 @@
                 <x-input wire:model='name' name="name" label="Name" type="text" />
             </x-label>
 
-            <x-label>Icon
-                <x-input wire:model='icon' name="icon" label="Icon" type="file" />
-            </x-label>
+            <x-file-upload wire:model='icon' name="icon" label="Icon" :display-upload-progress="true">
+                <div>
+                    @if ($icon)
+                        <span class="block w-20 h-20">
+                            <img class="w-full rounded-full"
+                                src="{{ $isUploaded ? $icon->temporaryUrl() : url('storage/' . $icon) }}" />
+                        </span>
+                    @endif
+                </div>
+            </x-file-upload>
             {{-- <x-toggle wire:model="status" label="Status" /> --}}
         </div>
 
