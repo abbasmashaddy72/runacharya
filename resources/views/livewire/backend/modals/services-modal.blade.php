@@ -23,7 +23,7 @@
                 <x-input wire:model='name' name="name" label="Name" type="text" />
             </x-label>
 
-            <x-file-upload wire:model='icon' name="icon" label="Icon" :display-upload-progress="true">
+            <x-file-upload wire:model='icon' name="Icon" label="Icon" :display-upload-progress="true">
                 <div>
                     @if ($icon)
                         <span class="block w-20 h-20">

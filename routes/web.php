@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware' => ['auth', 'verified'], 'namespace' => 'App\Http\Controllers'], function () {
+Route::group(['middleware' => ['web', 'auth', 'verified'], 'namespace' => 'App\Http\Controllers'], function () {
     Route::get('/dashboard', function () {
         view()->share('title', 'Dashboard');
         return view('dashboard');
@@ -32,6 +32,16 @@ Route::group(['middleware' => ['auth', 'verified'], 'namespace' => 'App\Http\Con
     Route::delete('/profile', 'ProfileController@destroy')->name('profile.destroy');
 
     Route::get('services', 'ServiceController@index')->name('services.index');
+
+    Route::get('about', 'AboutController@index')->name('about.index');
+    Route::post('about-update', 'AboutController@update')->name('about.update');
+
+    Route::get('contact', 'ContactController@index')->name('contact.index');
+    Route::post('contact-update', 'ContactController@update')->name('contact.update');
+
+    Route::group(['prefix' => 'laravel-filemanager'], function () {
+        \UniSharp\LaravelFilemanager\Lfm::routes();
+    });
 });
 
 require __DIR__ . '/auth.php';

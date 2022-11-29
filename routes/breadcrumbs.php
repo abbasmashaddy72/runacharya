@@ -20,3 +20,15 @@ Breadcrumbs::for('services.index', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Services', route('services.index'));
 });
+
+// Application > About
+Breadcrumbs::for('about.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('About Us', route('about.index'));
+});
+
+// Application > contact
+Breadcrumbs::for('contact.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Contact Us', route('contact.index'));
+});

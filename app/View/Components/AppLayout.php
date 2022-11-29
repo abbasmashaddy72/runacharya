@@ -45,6 +45,21 @@ class AppLayout extends Component
                 'title' => 'Services',
                 'route_name' => 'services.index',
             ],
+            'about' => [
+                'icon' => 'shield',
+                'title' => 'About Us',
+                'route_name' => 'about.index',
+            ],
+            'contact' => [
+                'icon' => 'phone-call',
+                'title' => 'Contact Us',
+                'route_name' => 'contact.index',
+            ],
+            'gallery' => [
+                'icon' => 'image',
+                'title' => 'Gallery',
+                'route_name' => 'unisharp.lfm.show',
+            ],
         ];
     }
 
