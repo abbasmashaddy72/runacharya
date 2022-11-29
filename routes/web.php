@@ -19,16 +19,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    view()->share('title', 'Dashboard');
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::group(['middleware' => ['auth', 'verified'], 'namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/dashboard', function () {
+        view()->share('title', 'Dashboard');
+        return view('dashboard');
+    })->name('dashboard');
 
-Route::middleware('auth')->group(function () {
-    Route::get('users', [UserController::class, 'index'])->name('users.index');
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('users', 'UserController@index')->name('users.index');
+
+    Route::get('/profile', 'ProfileController@edit')->name('profile.edit');
+    Route::patch('/profile', 'ProfileController@update')->name('profile.update');
+    Route::delete('/profile', 'ProfileController@destroy')->name('profile.destroy');
+
+    Route::get('services', 'ServiceController@index')->name('services.index');
 });
 
 require __DIR__ . '/auth.php';

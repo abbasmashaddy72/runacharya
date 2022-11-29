@@ -40,6 +40,11 @@ class AppLayout extends Component
                 'title' => 'Users',
                 'route_name' => 'users.index',
             ],
+            'services' => [
+                'icon' => 'settings',
+                'title' => 'Services',
+                'route_name' => 'services.index',
+            ],
         ];
     }
 

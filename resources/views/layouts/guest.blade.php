@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    @include('layouts.common.dark-mode-switch')
+    @include('layouts.bePartials.dark-mode-switch')
 
     @stack('scripts')
     @fcScripts

@@ -12,5 +12,11 @@ Breadcrumbs::for('#', function (Generator $trail) {
 // Application > User
 Breadcrumbs::for('users.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('User', route('users.index'));
+    $trail->push('Users', route('users.index'));
+});
+
+// Application > Service
+Breadcrumbs::for('services.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Services', route('services.index'));
 });

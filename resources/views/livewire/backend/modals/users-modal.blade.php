@@ -1,6 +1,11 @@
 <x-backend.modal form-action="save">
     <x-slot name="title">
-        Add Patient
+        @if ($user_id)
+            Update
+        @else
+            Add
+        @endif
+        {{ __(' User') }}
     </x-slot>
 
     <x-slot name="content">
