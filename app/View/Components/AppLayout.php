@@ -34,36 +34,46 @@ class AppLayout extends Component
                 'title' => 'Dashboard',
                 'route_name' => 'dashboard',
             ],
+            'contacted-from' => [
+                'icon' => 'phone-incoming',
+                'title' => 'Contacted From Data',
+                'route_name' => 'contacted-form.index',
+            ],
             'devider',
-            'users' => [
-                'icon' => 'user',
-                'title' => 'Users',
-                'route_name' => 'users.index',
-            ],
-            'doctor' => [
-                'icon' => 'award',
-                'title' => 'Doctors',
-                'route_name' => 'doctors.index',
-            ],
-            'services' => [
-                'icon' => 'settings',
-                'title' => 'Services',
-                'route_name' => 'services.index',
+            'homepage' => [
+                'icon' => 'home',
+                'title' => 'Home Page',
+                'route_name' => 'homepage.index',
             ],
             'about' => [
                 'icon' => 'shield',
                 'title' => 'About Us',
                 'route_name' => 'about.index',
             ],
-            'contact' => [
-                'icon' => 'phone-call',
-                'title' => 'Contact Us',
-                'route_name' => 'contact.index',
+            'services' => [
+                'icon' => 'settings',
+                'title' => 'Services',
+                'route_name' => 'services.index',
+            ],
+            'doctor' => [
+                'icon' => 'award',
+                'title' => 'Doctors',
+                'route_name' => 'doctors.index',
             ],
             'gallery' => [
                 'icon' => 'image',
                 'title' => 'Gallery',
                 'route_name' => 'unisharp.lfm.show',
+            ],
+            'contact' => [
+                'icon' => 'phone-call',
+                'title' => 'Contact Us',
+                'route_name' => 'contact.index',
+            ],
+            'users' => [
+                'icon' => 'user',
+                'title' => 'Users',
+                'route_name' => 'users.index',
             ]
         ];
     }

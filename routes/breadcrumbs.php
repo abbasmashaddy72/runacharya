@@ -38,3 +38,15 @@ Breadcrumbs::for('doctors.index', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Doctors', route('doctors.index'));
 });
+
+// Application > HomePage
+Breadcrumbs::for('homepage.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Home Page', route('homepage.index'));
+});
+
+// Application > Contact Form Data
+Breadcrumbs::for('contacted-form.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Contacted Form Data', route('contacted-form.index'));
+});
