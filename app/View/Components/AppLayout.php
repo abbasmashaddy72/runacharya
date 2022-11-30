@@ -40,6 +40,11 @@ class AppLayout extends Component
                 'title' => 'Users',
                 'route_name' => 'users.index',
             ],
+            'doctor' => [
+                'icon' => 'award',
+                'title' => 'Doctors',
+                'route_name' => 'doctors.index',
+            ],
             'services' => [
                 'icon' => 'settings',
                 'title' => 'Services',
@@ -59,7 +64,7 @@ class AppLayout extends Component
                 'icon' => 'image',
                 'title' => 'Gallery',
                 'route_name' => 'unisharp.lfm.show',
-            ],
+            ]
         ];
     }
 

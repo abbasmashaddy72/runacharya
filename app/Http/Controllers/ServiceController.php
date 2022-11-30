@@ -11,10 +11,6 @@ class ServiceController extends Controller
     {
         view()->share('title', 'Services');
 
-        // $data = ServiceDepartment::withCount('services')->get();
-        // echo $data;
-        // exit;
-
         return view('pages.backend.services.index');
     }
 }

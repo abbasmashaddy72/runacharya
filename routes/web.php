@@ -42,6 +42,8 @@ Route::group(['middleware' => ['web', 'auth', 'verified'], 'namespace' => 'App\H
     Route::group(['prefix' => 'laravel-filemanager'], function () {
         \UniSharp\LaravelFilemanager\Lfm::routes();
     });
+
+    Route::get('doctors', 'DoctorController@index')->name('doctors.index');
 });
 
 require __DIR__ . '/auth.php';

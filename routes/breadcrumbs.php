@@ -27,8 +27,14 @@ Breadcrumbs::for('about.index', function (Generator $trail) {
     $trail->push('About Us', route('about.index'));
 });
 
-// Application > contact
+// Application > Dontact
 Breadcrumbs::for('contact.index', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Contact Us', route('contact.index'));
+});
+
+// Application > Doctors
+Breadcrumbs::for('doctors.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Doctors', route('doctors.index'));
 });
