@@ -34,6 +34,11 @@ class AppLayout extends Component
                 'title' => 'Dashboard',
                 'route_name' => 'dashboard',
             ],
+            'bookedAppointment-from' => [
+                'icon' => 'voicemail',
+                'title' => 'Booked Appointment',
+                'route_name' => 'booked-appointment-form.index',
+            ],
             'contacted-from' => [
                 'icon' => 'phone-incoming',
                 'title' => 'Contacted From Data',

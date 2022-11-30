@@ -50,3 +50,9 @@ Breadcrumbs::for('contacted-form.index', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Contacted Form Data', route('contacted-form.index'));
 });
+
+// Application > BookedAppointment Form Data
+Breadcrumbs::for('booked-appointment-form.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Booked Appointment', route('booked-appointment-form.index'));
+});

@@ -49,6 +49,8 @@ Route::group(['middleware' => ['web', 'auth', 'verified'], 'namespace' => 'App\H
     Route::post('homepage-update', 'HomepageController@update')->name('homepage.update');
 
     Route::get('contacted-form', 'ContactedFromController@index')->name('contacted-form.index');
+
+    Route::get('booked-appointment-form', 'BookedAppointmentController@index')->name('booked-appointment-form.index');
 });
 
 require __DIR__ . '/auth.php';
