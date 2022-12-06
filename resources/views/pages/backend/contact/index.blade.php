@@ -9,7 +9,7 @@
         </x-slot>
 
         <div class="py-12">
-            <x-form action="{{ route('contact.update') }}">
+            <x-form action="{{ route('admin.contact.update') }}">
 
                 <div class="grid-cols-3 gap-2 sm:grid">
                     <x-label>Contact No

@@ -15,11 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/', 'FrontendController@index')->name('homepage');
+    Route::get('about_us', 'FrontendController@about_us')->name('about_us');
+    Route::get('services', 'FrontendController@services')->name('services');
+    Route::get('doctors', 'FrontendController@doctors')->name('doctors');
+    Route::get('gallery', 'FrontendController@gallery')->name('gallery');
+    Route::get('contact_us', 'FrontendController@contact_us')->name('contact_us');
+    Route::get('book_appointment', 'FrontendController@book_appointment')->name('book_appointment');
 });
 
-Route::group(['middleware' => ['web', 'auth', 'verified'], 'namespace' => 'App\Http\Controllers'], function () {
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['web', 'auth', 'verified'], 'namespace' => 'App\Http\Controllers'], function () {
     Route::get('/dashboard', function () {
         view()->share('title', 'Dashboard');
         return view('dashboard');

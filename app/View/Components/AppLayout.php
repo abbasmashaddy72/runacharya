@@ -32,53 +32,53 @@ class AppLayout extends Component
             'dashboard' => [
                 'icon' => 'home',
                 'title' => 'Dashboard',
-                'route_name' => 'dashboard',
+                'route_name' => 'admin.dashboard',
             ],
             'bookedAppointment-from' => [
-                'icon' => 'voicemail',
+                'icon' => 'calendar',
                 'title' => 'Booked Appointment',
-                'route_name' => 'booked-appointment-form.index',
+                'route_name' => 'admin.booked-appointment-form.index',
             ],
             'contacted-from' => [
                 'icon' => 'phone-incoming',
                 'title' => 'Contacted From Data',
-                'route_name' => 'contacted-form.index',
+                'route_name' => 'admin.contacted-form.index',
             ],
             'devider',
             'homepage' => [
                 'icon' => 'home',
                 'title' => 'Home Page',
-                'route_name' => 'homepage.index',
+                'route_name' => 'admin.homepage.index',
             ],
             'about' => [
                 'icon' => 'shield',
                 'title' => 'About Us',
-                'route_name' => 'about.index',
+                'route_name' => 'admin.about.index',
             ],
             'services' => [
                 'icon' => 'settings',
                 'title' => 'Services',
-                'route_name' => 'services.index',
+                'route_name' => 'admin.services.index',
             ],
             'doctor' => [
                 'icon' => 'award',
                 'title' => 'Doctors',
-                'route_name' => 'doctors.index',
+                'route_name' => 'admin.doctors.index',
             ],
             'gallery' => [
                 'icon' => 'image',
                 'title' => 'Gallery',
-                'route_name' => 'unisharp.lfm.show',
+                'route_name' => 'admin.unisharp.lfm.show',
             ],
             'contact' => [
                 'icon' => 'phone-call',
                 'title' => 'Contact Us',
-                'route_name' => 'contact.index',
+                'route_name' => 'admin.contact.index',
             ],
             'users' => [
                 'icon' => 'user',
                 'title' => 'Users',
-                'route_name' => 'users.index',
+                'route_name' => 'admin.users.index',
             ]
         ];
     }

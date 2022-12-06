@@ -39,6 +39,6 @@ class AboutController extends Controller
             set_static_option('description', $request->description);
         }
 
-        return redirect()->route('about.index');
+        return redirect()->route('admin.about.index');
     }
 }

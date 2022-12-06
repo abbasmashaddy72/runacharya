@@ -14,36 +14,48 @@ class FrontendController extends Controller
 
     public function index()
     {
-        return view();
+        return view('pages.frontend.index');
     }
 
     public function about_us()
     {
-        return view();
+        view()->share('title', 'About Us');
+
+        return view('pages.frontend.about_us');
     }
 
     public function services()
     {
-        return view();
+        view()->share('title', 'Services');
+
+        return view('pages.frontend.services');
     }
 
     public function doctors()
     {
-        return view();
+        view()->share('title', 'Doctors');
+
+        return view('pages.frontend.doctors');
     }
 
     public function gallery()
     {
-        return view();
+        view()->share('title', 'Gallery');
+
+        return view('pages.frontend.gallery');
     }
 
     public function contact_us()
     {
-        return view();
+        view()->share('title', 'Contact Us');
+
+        return view('pages.frontend.contact_us');
     }
 
     public function book_appointment()
     {
-        return view();
+        view()->share('title', 'Book Appointment');
+
+        return view('pages.frontend.book_appointment');
     }
 }

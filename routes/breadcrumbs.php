@@ -12,47 +12,53 @@ Breadcrumbs::for('#', function (Generator $trail) {
 // Application > User
 Breadcrumbs::for('users.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Users', route('users.index'));
+    $trail->push('Users', route('admin.users.index'));
 });
 
 // Application > Service
 Breadcrumbs::for('services.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Services', route('services.index'));
+    $trail->push('Services', route('admin.services.index'));
 });
 
 // Application > About
 Breadcrumbs::for('about.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('About Us', route('about.index'));
+    $trail->push('About Us', route('admin.about.index'));
 });
 
 // Application > Dontact
 Breadcrumbs::for('contact.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Contact Us', route('contact.index'));
+    $trail->push('Contact Us', route('admin.contact.index'));
 });
 
 // Application > Doctors
 Breadcrumbs::for('doctors.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Doctors', route('doctors.index'));
+    $trail->push('Doctors', route('admin.doctors.index'));
 });
 
 // Application > HomePage
 Breadcrumbs::for('homepage.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Home Page', route('homepage.index'));
+    $trail->push('Home Page', route('admin.homepage.index'));
 });
 
 // Application > Contact Form Data
 Breadcrumbs::for('contacted-form.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Contacted Form Data', route('contacted-form.index'));
+    $trail->push('Contacted Form Data', route('admin.contacted-form.index'));
 });
 
-// Application > BookedAppointment Form Data
+// Application > Booked Appointment Form Data
 Breadcrumbs::for('booked-appointment-form.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Booked Appointment', route('booked-appointment-form.index'));
+    $trail->push('Booked Appointment', route('admin.booked-appointment-form.index'));
+});
+
+// Application > Profile Update
+Breadcrumbs::for('edit.profile', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Profile Update', route('admin.profile.edit'));
 });

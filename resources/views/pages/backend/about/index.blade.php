@@ -9,7 +9,7 @@
         </x-slot>
 
         <div class="py-12">
-            <x-form action="{{ route('about.update') }}" has-files>
+            <x-form action="{{ route('admin.about.update') }}" has-files>
                 <x-file-upload name="image" label="Image">
                     <div>
                         @if ($image)

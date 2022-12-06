@@ -60,6 +60,6 @@ class ContactController extends Controller
             set_static_option('embed_map_link', $request->embed_map_link);
         }
 
-        return redirect()->route('contact.index');
+        return redirect()->route('admin.contact.index');
     }
 }

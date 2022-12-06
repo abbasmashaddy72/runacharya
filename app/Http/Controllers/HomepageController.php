@@ -97,6 +97,6 @@ class HomepageController extends Controller
             set_static_option('hero_feature_url_3', $request->hero_feature_url_3);
         }
 
-        return redirect()->route('homepage.index');
+        return redirect()->route('admin.homepage.index');
     }
 }
