@@ -7,7 +7,7 @@ export default defineConfig({
         liveReload("./app/Http/**/*.php"),
         laravel([
             "resources/css/frontend/app.scss",
-            "resources/js/frontend/app.js",
+            "resources/js/frontend/app.ts",
         ]),
         {
             name: "blade",

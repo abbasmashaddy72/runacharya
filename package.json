@@ -3,10 +3,10 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "dev:back": "vite --config vite-backend.config.js",
-        "dev:front": "vite --config vite-frontend.config.js",
-        "build:back": "vite build --config vite-backend.config.js",
-        "build:front": "vite build --config vite-frontend.config.js"
+        "dev:back": "vite --config vite.backend.config.ts",
+        "dev:front": "vite --config vite.frontend.config.ts",
+        "build:back": "vite build --config vite.backend.config.ts",
+        "build:front": "vite build --config vite.frontend.config.ts"
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.10.5",
@@ -14,6 +14,7 @@
         "@popperjs/core": "^2.11.6",
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+        "@types/node": "^18.11.12",
         "alpinejs": "^3.4.2",
         "autoprefixer": "^10.4.2",
         "axios": "^1.1.2",

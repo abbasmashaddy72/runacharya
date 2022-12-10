@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(ServiceSeeder::class);
         // $this->call(DoctorSeeder::class);
         // $this->call(ContactFormSeeder::class);
-        $this->call(BookAppointmentFormSeeder::class);
+        // $this->call(BookAppointmentFormSeeder::class);
+        $this->call(TestimonialSeeder::class);
     }
 }

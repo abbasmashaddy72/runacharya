@@ -27,7 +27,7 @@ Breadcrumbs::for('about.index', function (Generator $trail) {
     $trail->push('About Us', route('admin.about.index'));
 });
 
-// Application > Dontact
+// Application > Contact
 Breadcrumbs::for('contact.index', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Contact Us', route('admin.contact.index'));
@@ -61,4 +61,10 @@ Breadcrumbs::for('booked-appointment-form.index', function (Generator $trail) {
 Breadcrumbs::for('edit.profile', function (Generator $trail) {
     $trail->parent('#');
     $trail->push('Profile Update', route('admin.profile.edit'));
+});
+
+// Application > Testimonial
+Breadcrumbs::for('testimonials.index', function (Generator $trail) {
+    $trail->parent('#');
+    $trail->push('Testimonials', route('admin.testimonials.index'));
 });

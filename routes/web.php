@@ -57,6 +57,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['web', 'au
     Route::get('contacted-form', 'ContactedFromController@index')->name('contacted-form.index');
 
     Route::get('booked-appointment-form', 'BookedAppointmentController@index')->name('booked-appointment-form.index');
+
+    Route::get('testimonial', 'TestimonialController@index')->name('testimonials.index');
 });
 
 require __DIR__ . '/auth.php';

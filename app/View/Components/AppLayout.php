@@ -65,6 +65,11 @@ class AppLayout extends Component
                 'title' => 'Doctors',
                 'route_name' => 'admin.doctors.index',
             ],
+            'testimonial' => [
+                'icon' => 'chevrons-up',
+                'title' => 'Testimonials',
+                'route_name' => 'admin.testimonials.index',
+            ],
             'gallery' => [
                 'icon' => 'image',
                 'title' => 'Gallery',

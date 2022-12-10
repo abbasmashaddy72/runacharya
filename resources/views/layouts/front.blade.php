@@ -16,7 +16,8 @@
         {{ config('app.name', 'Laravel') }}
     </title>
 
-    @vite(['resources/css/frontend/app.scss', 'resources/js/frontend/app.js'])
+    @client
+    @vite('frontend')
     @stack('styles')
     @livewireStyles
 </head>

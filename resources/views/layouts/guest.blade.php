@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Scripts -->
-    @vite(['resources/css/backend/app.css', 'resources/js/backend/app.js'])
+    @vite('backend')
     @stack('styles')
     @fcStyles
 </head>
