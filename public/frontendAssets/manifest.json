@@ -1,0 +1,12 @@
+{
+  "resources/js/frontend/app.ts": {
+    "file": "assets/app.5de920d2.js",
+    "src": "resources/js/frontend/app.ts",
+    "isEntry": true
+  },
+  "resources/css/frontend/app.scss": {
+    "file": "assets/app.4681121e.css",
+    "src": "resources/css/frontend/app.scss",
+    "isEntry": true
+  }
+}

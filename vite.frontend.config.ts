@@ -5,10 +5,13 @@ import liveReload from "vite-plugin-live-reload";
 export default defineConfig({
     plugins: [
         liveReload("./app/Http/**/*.php"),
-        laravel([
-            "resources/css/frontend/app.scss",
-            "resources/js/frontend/app.ts",
-        ]),
+        laravel({
+            input: [
+                "resources/css/frontend/app.scss",
+                "resources/js/frontend/app.ts",
+            ],
+            buildDirectory: '/frontendAssets',
+        }),
         {
             name: "blade",
             handleHotUpdate({ file, server }) {

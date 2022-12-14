@@ -3,6 +3,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="{{ $dark_mode ? 'dark' : '' }}">
 
 <head>
+    {{ Vite::useBuildDirectory('/backendAssets') }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -22,8 +23,7 @@
         {{ config('app.name', 'Laravel') }}
     </title>
 
-    @client
-    @vite('backend')
+    @vite(['resources/css/backend/app.scss', 'resources/js/backend/app.ts'])
     @stack('styles')
     @livewireStyles
 </head>

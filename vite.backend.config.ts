@@ -5,10 +5,13 @@ import liveReload from "vite-plugin-live-reload";
 export default defineConfig({
     plugins: [
         liveReload("./app/Http/**/*.php"),
-        laravel([
-            "resources/css/backend/app.css",
-            "resources/js/backend/app.js",
-        ]),
+        laravel({
+            input: [
+                "resources/css/backend/app.scss",
+                "resources/js/backend/app.ts",
+            ],
+            buildDirectory: '/backendAssets',
+        }),
         {
             name: "blade",
             handleHotUpdate({ file, server }) {
@@ -27,9 +30,7 @@ export default defineConfig({
                 require("postcss-import"),
                 require("postcss-advanced-variables"),
                 require("tailwindcss/nesting"),
-                require("tailwindcss")({
-                    config: "./tailwind-backend.config.js",
-                }),
+                require("tailwindcss")("./tailwind-backend.config.js"),
                 require("autoprefixer"),
             ],
         },
