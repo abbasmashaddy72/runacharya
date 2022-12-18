@@ -8,7 +8,7 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/css/frontend/app.scss",
-                "resources/js/frontend/app.ts",
+                "resources/js/frontend/app.js",
             ],
             buildDirectory: '/frontendAssets',
         }),

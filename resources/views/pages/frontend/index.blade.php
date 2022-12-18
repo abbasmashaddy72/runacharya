@@ -79,7 +79,7 @@
                         <div class="absolute left-0 right-0 text-center bottom-2/4 translate-y-2/4">
                             <a href="https://youtu.be/fKSBVIKbcAg" data-type="youtube" data-id="fKSBVIKbcAg"
                                 class="inline-flex items-center justify-center w-20 h-20 text-indigo-600 bg-white rounded-full shadow-lg lightbox dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="inline-flex items-center justify-center text-2xl mdi mdi-play"></i>
+                                <i class="inline-flex items-center justify-center text-2xl uil uil-play"></i>
                             </a>
                         </div>
                     </div>
@@ -665,11 +665,11 @@
                                     "
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
@@ -691,11 +691,11 @@
                                     organic disorders. "
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
@@ -717,11 +717,11 @@
                                     involving the musculoskeletal system. "
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
@@ -742,11 +742,11 @@
                                     ventilation."
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
@@ -768,11 +768,11 @@
                                     hemodialysis. "
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
@@ -797,11 +797,11 @@
                                     your small intestine (the duodenum). "
                                 </p>
                                 <ul class="mt-3 mb-0 list-none text-amber-400">
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
-                                    <li class="inline"><i class="mdi mdi-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
+                                    <li class="inline"><i class="uil uil-star"></i></li>
                                 </ul>
                             </div>
 
