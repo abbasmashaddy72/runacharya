@@ -3,12 +3,15 @@ import laravel from "laravel-vite-plugin";
 import liveReload from "vite-plugin-live-reload";
 
 export default defineConfig({
+    server: {
+        port: 5174
+    },
     plugins: [
         liveReload("./app/Http/**/*.php"),
         laravel({
             input: [
-                "resources/css/backend/app.scss",
-                "resources/js/backend/app.ts",
+                "resources/css/backend/app.css",
+                "resources/js/backend/app.js",
             ],
             buildDirectory: '/backendAssets',
         }),

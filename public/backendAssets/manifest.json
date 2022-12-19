@@ -1,12 +1,12 @@
 {
-  "resources/js/backend/app.ts": {
-    "file": "assets/app.13d525c3.js",
-    "src": "resources/js/backend/app.ts",
+  "resources/js/backend/app.js": {
+    "file": "assets/app.bfb93122.js",
+    "src": "resources/js/backend/app.js",
     "isEntry": true
   },
-  "resources/css/backend/app.scss": {
+  "resources/css/backend/app.css": {
     "file": "assets/app.35543c33.css",
-    "src": "resources/css/backend/app.scss",
+    "src": "resources/css/backend/app.css",
     "isEntry": true
   }
 }

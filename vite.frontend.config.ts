@@ -3,6 +3,9 @@ import laravel from "laravel-vite-plugin";
 import liveReload from "vite-plugin-live-reload";
 
 export default defineConfig({
+    server: {
+        port: 5143
+    },
     plugins: [
         liveReload("./app/Http/**/*.php"),
         laravel({

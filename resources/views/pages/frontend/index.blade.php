@@ -15,7 +15,7 @@
     <section class="relative py-16 bg-gray-50 dark:bg-slate-800 md:py-24">
         <div class="container">
             <div class="grid justify-center grid-cols-1">
-                <div class="features-absolute">
+                <div class="relative z-10 -mt-44">
                     <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-[24px]">
                         <div
                             class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow bg-sky-100 group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
@@ -656,7 +656,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     " Gastroenterology is the study of the normal function and diseases of the
                                     esophagus,
@@ -684,7 +687,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     "neurology, medical specialty concerned with the nervous system and its functional
                                     or
@@ -710,7 +716,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     "Orthopedic surgery or orthopedics, is the branch of surgery concerned with
                                     conditions
@@ -736,7 +745,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     " Pulmonology often involves managing patients who need life support and mechanical
                                     ventilation."
@@ -761,7 +773,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     "A vascular access is a surgically created vein used to remove and return blood
                                     during
@@ -787,7 +802,10 @@
                         <div class="customer-testi">
                             <div
                                 class="relative p-6 m-2 bg-white rounded shadow content dark:shadow-gray-700 dark:bg-slate-900">
-                                <i class="text-indigo-600 mdi mdi-format-quote-open mdi-48px"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                    <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
+                                </svg>
                                 <p class="text-slate-400">
                                     "An upper GI endoscopy or EGD (esophagogastroduodenoscopy) is a procedure to
                                     diagnose

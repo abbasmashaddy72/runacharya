@@ -3,8 +3,8 @@
     "scripts": {
         "dev": "vite",
         "build": "npm run build:front & npm run build:back",
-        "dev:back": "vite --config vite.backend.config.ts",
-        "dev:front": "vite --config vite.frontend.config.ts",
+        "dev:back": "vite --config vite.backend.config.ts --port 5174",
+        "dev:front": "vite --config vite.frontend.config.ts --port 5173",
         "build:back": "vite build --config vite.backend.config.ts",
         "build:front": "vite build --config vite.frontend.config.ts"
     },
