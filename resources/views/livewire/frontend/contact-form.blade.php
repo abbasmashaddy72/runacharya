@@ -4,8 +4,7 @@
 
         <form wire:submit.prevent="save">
             @if ($submitted)
-                <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mb-4"
-                    x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 5000)">
+                <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md mb-4">
                     <div class="flex">
                         <div class="mr-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

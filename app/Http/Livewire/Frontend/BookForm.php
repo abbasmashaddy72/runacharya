@@ -2,21 +2,23 @@
 
 namespace App\Http\Livewire\Frontend;
 
-use App\Models\ContactForm as ModelsContactForm;
+use App\Models\BookAppointmentForm;
 use Livewire\Component;
 
-class ContactForm extends Component
+class BookForm extends Component
 {
     //Custom Values
     public $submitted = false;
     //Model Values
-    public $name, $phone_no, $question, $comment;
+    public $name, $phone_no, $area, $appointment_date, $appointment_time, $comment;
 
     protected $rules = [
         'name' => 'required',
         'phone_no' => 'required',
-        'question' => 'required',
-        'comment' => 'required'
+        'area' => 'required',
+        'appointment_date' => 'required',
+        'appointment_time' => 'required',
+        'comment' => ''
     ];
 
     public function updated($propertyName)
@@ -28,13 +30,13 @@ class ContactForm extends Component
     {
         $validatedData = $this->validate();
 
-        ModelsContactForm::create($validatedData);
-        $this->reset();
+        BookAppointmentForm::create($validatedData);
         $this->submitted = true;
+        $this->reset();
     }
 
     public function render()
     {
-        return view('livewire.frontend.contact-form');
+        return view('livewire.frontend.book-form');
     }
 }

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Doctor;
 use App\Models\Service;
 use App\Models\Testimonial;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Storage;
 
 class FrontendController extends Controller
 {
@@ -58,22 +60,33 @@ class FrontendController extends Controller
     public function services()
     {
         view()->share('title', 'Services');
+        $services = Service::get()->groupBy('department.title');
 
-        return view('pages.frontend.services');
+        return view('pages.frontend.services', compact('services'));
     }
 
     public function doctors()
     {
         view()->share('title', 'Doctors');
+        $doctors = Doctor::get();
 
-        return view('pages.frontend.doctors');
+        return view('pages.frontend.doctors', compact('doctors'));
     }
 
     public function gallery()
     {
         view()->share('title', 'Gallery');
+        $dir = Storage::disk('public')->directories('files');
 
-        return view('pages.frontend.gallery');
+        for ($i = 0; $i < count($dir); $i++) {
+            $directories[$i] = Storage::disk('public')->directories($dir[$i]);
+        }
+
+        $directories = array_filter($directories);
+        $directories = Arr::flatten($directories);
+        sort($directories);
+
+        return view('pages.frontend.gallery', compact('directories'));
     }
 
     public function contact_us()

@@ -19,7 +19,7 @@
                     <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-[24px]">
                         @for ($i = 1; $i <= count($feature); $i++)
                             <div
-                                class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow bg-sky-100 group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
+                                class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow bg-blue-600 group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
                                 <div
                                     class="flex items-center justify-center w-16 h-16 mx-auto text-2xl text-indigo-600 align-middle rounded-lg shadow-sm bg-indigo-600/5 dark:shadow-gray-700">
                                     <img
@@ -27,7 +27,7 @@
                                 </div>
 
                                 <div class="content mt-7">
-                                    <a href="{{ route('services') }}"
+                                    <a href="{{ $feature['feature_' . $i]['hero_feature_url_' . $i] }}"
                                         class="text-lg font-medium title h5 hover:text-indigo-600">
                                         {{ $feature['feature_' . $i]['hero_feature_text_' . $i] }}
                                     </a>
@@ -100,7 +100,7 @@
                                 <img class="bg-red-900" src="{{ url('storage/' . $item->image) }}">
                             </div>
                             <a href="{{ route('doctors') }}">
-                                <div class="flex-1">
+                                <div class="flex-1 text-gray-600">
                                     <h4 class="mb-0 text-lg font-medium">{{ $item->name }}</h4>
                                     <p>{{ $item->degree }}</p>
                                     <p>{{ $item->specialty }}</p>
