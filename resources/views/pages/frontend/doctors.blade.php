@@ -15,7 +15,7 @@
                             class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow bg-blue-600 hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
                             <div
                                 class="items-center justify-center h-[45px] min-w-[45px] -rotate-50 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                                <img height="height-[45px]" src="{{ url('storage/' . $item->image) }}">
+                                <img height="height-[45px]" src="{{ asset('storage/' . $item->image) }}">
                             </div>
                             <a href="{{ route('doctors') }}">
                                 <div class="flex-1">

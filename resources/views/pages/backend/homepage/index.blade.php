@@ -15,7 +15,7 @@
                         <div>
                             @if ($hero_image)
                                 <span class="block w-20 h-20">
-                                    <img class="w-full rounded-full" src="{{ url('storage/' . $hero_image) }}" />
+                                    <img class="w-full rounded-full" src="{{ asset('storage/' . $hero_image) }}" />
                                 </span>
                             @endif
                         </div>
@@ -25,7 +25,7 @@
                         <div>
                             @if ($logo)
                                 <span class="block w-20 h-20">
-                                    <img class="w-full rounded-full" src="{{ url('storage/' . $logo) }}" />
+                                    <img class="w-full rounded-full" src="{{ asset('storage/' . $logo) }}" />
                                 </span>
                             @endif
                         </div>
@@ -40,7 +40,7 @@
                             @if ($hero_feature_icon_1)
                                 <span class="block w-20 h-20">
                                     <img class="w-full rounded-full"
-                                        src="{{ url('storage/' . $hero_feature_icon_1) }}" />
+                                        src="{{ asset('storage/' . $hero_feature_icon_1) }}" />
                                 </span>
                             @endif
                         </div>
@@ -63,7 +63,7 @@
                             @if ($hero_feature_icon_2)
                                 <span class="block w-20 h-20">
                                     <img class="w-full rounded-full"
-                                        src="{{ url('storage/' . $hero_feature_icon_2) }}" />
+                                        src="{{ asset('storage/' . $hero_feature_icon_2) }}" />
                                 </span>
                             @endif
                         </div>
@@ -86,7 +86,7 @@
                             @if ($hero_feature_icon_3)
                                 <span class="block w-20 h-20">
                                     <img class="w-full rounded-full"
-                                        src="{{ url('storage/' . $hero_feature_icon_3) }}" />
+                                        src="{{ asset('storage/' . $hero_feature_icon_3) }}" />
                                 </span>
                             @endif
                         </div>

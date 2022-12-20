@@ -3,7 +3,7 @@
     <section class="relative block h-screen swiper-slider-hero" id="home">
         <div class="flex items-center py-24 overflow-hidden swiper-slide md:py-24">
             <div class="slide-inner slide-bg-image md:px-2 px-2 flex items-center bg-center bg-no-repeat ;"
-                data-background="{{ url('storage/' . $hero_image) }}">
+                data-background="{{ asset('storage/' . $hero_image) }}">
                 <div class="absolute inset-0"></div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                                 <div
                                     class="flex items-center justify-center w-16 h-16 mx-auto text-2xl text-indigo-600 align-middle rounded-lg shadow-sm bg-indigo-600/5 dark:shadow-gray-700">
                                     <img
-                                        src="{{ url('storage/' . $feature['feature_' . $i]['hero_feature_icon_' . $i]) }}">
+                                        src="{{ asset('storage/' . $feature['feature_' . $i]['hero_feature_icon_' . $i]) }}">
                                 </div>
 
                                 <div class="content mt-7">
@@ -64,7 +64,7 @@
                                 class="flex items-center p-3 transition-all duration-500 ease-in-out bg-white rounded-md shadow hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
                                 <div
                                     class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-50 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                                    <img class="height-[45px]" src="{{ url('storage/' . $key_item->icon) }}">
+                                    <img class="height-[45px]" src="{{ asset('storage/' . $key_item->icon) }}">
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="mb-0 text-lg font-medium">{{ $key_item->name }}</h4>
@@ -97,7 +97,7 @@
                             class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow home-doctors hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
                             <div
                                 class="items-center justify-center h-[45px] min-w-[100px] -rotate-50 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                                <img class="bg-red-900" src="{{ url('storage/' . $item->image) }}">
+                                <img class="bg-red-900" src="{{ asset('storage/' . $item->image) }}">
                             </div>
                             <a href="{{ route('doctors') }}">
                                 <div class="flex-1 text-gray-600">

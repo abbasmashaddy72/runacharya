@@ -7,7 +7,7 @@
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
                             <a href="#" class="text-[22px] focus:outline-none">
-                                <img src="{{ url('storage/' . get_static_option('logo')) }}" alt="" />
+                                <img src="{{ asset('storage/' . get_static_option('logo')) }}" alt="" />
                             </a>
                             <p class="text-gray-300">{{ get_static_option('short_description') }}</p>
                             <ul class="mt-6 list-none">

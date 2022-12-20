@@ -15,10 +15,6 @@
     "file": "assets/unicons-11.d0a9665c.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.eot"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-12.eot": {
-    "file": "assets/unicons-12.dd58541a.eot",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.eot"
-  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-13.eot": {
     "file": "assets/unicons-13.5c2a4c8e.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-13.eot"
@@ -26,6 +22,10 @@
   "node_modules/@iconscout/unicons/fonts/line/unicons-14.eot": {
     "file": "assets/unicons-14.6ea0d72e.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-14.eot"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-12.eot": {
+    "file": "assets/unicons-12.dd58541a.eot",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.eot"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-15.eot": {
     "file": "assets/unicons-15.d425e694.eot",
@@ -47,6 +47,10 @@
     "file": "assets/unicons-19.c2a01333.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.eot"
   },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-2.eot": {
+    "file": "assets/unicons-2.76f929e1.eot",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.eot"
+  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-20.eot": {
     "file": "assets/unicons-20.1a24a004.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.eot"
@@ -54,10 +58,6 @@
   "node_modules/@iconscout/unicons/fonts/line/unicons-3.eot": {
     "file": "assets/unicons-3.74aa96a8.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.eot"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-2.eot": {
-    "file": "assets/unicons-2.76f929e1.eot",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.eot"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-4.eot": {
     "file": "assets/unicons-4.bd41308c.eot",
@@ -75,6 +75,14 @@
     "file": "assets/unicons-7.f5a18a2f.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.eot"
   },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-8.eot": {
+    "file": "assets/unicons-8.07313cf1.eot",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.eot"
+  },
+  "node_modules/lightbox2/src/images/loading.gif": {
+    "file": "assets/loading.225aa88b.gif",
+    "src": "node_modules/lightbox2/src/images/loading.gif"
+  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-9.eot": {
     "file": "assets/unicons-9.9ff6a0f5.eot",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.eot"
@@ -82,10 +90,6 @@
   "node_modules/lightbox2/src/images/prev.png": {
     "file": "assets/prev.7fd9273f.png",
     "src": "node_modules/lightbox2/src/images/prev.png"
-  },
-  "node_modules/lightbox2/src/images/loading.gif": {
-    "file": "assets/loading.225aa88b.gif",
-    "src": "node_modules/lightbox2/src/images/loading.gif"
   },
   "node_modules/lightbox2/src/images/next.png": {
     "file": "assets/next.15b869b0.png",
@@ -95,85 +99,77 @@
     "file": "assets/close.5d62e6c9.png",
     "src": "node_modules/lightbox2/src/images/close.png"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-8.eot": {
-    "file": "assets/unicons-8.07313cf1.eot",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.eot"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff2": {
-    "file": "assets/unicons-10.442d9a25.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff2": {
+    "file": "assets/unicons-0.cefa153d.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-1.woff2": {
     "file": "assets/unicons-1.e955343e.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-1.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff2": {
-    "file": "assets/unicons-12.064552dd.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-11.woff2": {
-    "file": "assets/unicons-11.cc013dd9.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff2": {
-    "file": "assets/unicons-15.db7ac3e8.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff2": {
-    "file": "assets/unicons-0.cefa153d.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-13.woff2": {
-    "file": "assets/unicons-13.36e8340a.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-13.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff2": {
+    "file": "assets/unicons-10.442d9a25.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-14.woff2": {
     "file": "assets/unicons-14.60fdebaf.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-14.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff2": {
-    "file": "assets/unicons-16.dc20977f.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-13.woff2": {
+    "file": "assets/unicons-13.36e8340a.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-13.woff2"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-11.woff2": {
+    "file": "assets/unicons-11.cc013dd9.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.woff2"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff2": {
+    "file": "assets/unicons-12.064552dd.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff2"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff2": {
+    "file": "assets/unicons-15.db7ac3e8.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-18.woff2": {
     "file": "assets/unicons-18.8e355fbc.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-18.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-3.woff2": {
-    "file": "assets/unicons-3.4bcf052a.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff2": {
-    "file": "assets/unicons-20.d3e37010.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff2"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff2": {
-    "file": "assets/unicons-17.34b6f5ce.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff2": {
+    "file": "assets/unicons-16.dc20977f.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff2": {
     "file": "assets/unicons-19.f6dd4940.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff2": {
-    "file": "assets/unicons-4.749ca342.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff2": {
+    "file": "assets/unicons-17.34b6f5ce.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-7.woff2": {
-    "file": "assets/unicons-7.d0806cfc.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff2": {
+    "file": "assets/unicons-20.d3e37010.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff2": {
     "file": "assets/unicons-2.19a80aad.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff2"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff2": {
-    "file": "assets/unicons-9.a83a55c4.woff2",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff2"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff2": {
+    "file": "assets/unicons-4.749ca342.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff2": {
     "file": "assets/unicons-6.56685bed.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff2"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-3.woff2": {
+    "file": "assets/unicons-3.4bcf052a.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.woff2"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-7.woff2": {
+    "file": "assets/unicons-7.d0806cfc.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.woff2"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-5.woff2": {
     "file": "assets/unicons-5.d5784766.woff2",
@@ -183,25 +179,21 @@
     "file": "assets/unicons-8.2b4e8922.woff2",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.woff2"
   },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff2": {
+    "file": "assets/unicons-9.a83a55c4.woff2",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff2"
+  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-1.woff": {
     "file": "assets/unicons-1.d3b4f22f.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-1.woff"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff": {
-    "file": "assets/unicons-12.e7c130ee.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff": {
-    "file": "assets/unicons-15.ecb01ee3.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff": {
+    "file": "assets/unicons-0.3e5097bc.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff": {
     "file": "assets/unicons-10.0be814f0.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff": {
-    "file": "assets/unicons-0.3e5097bc.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-14.woff": {
     "file": "assets/unicons-14.50e449ce.woff",
@@ -215,17 +207,45 @@
     "file": "assets/unicons-13.e06e8a85.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-13.woff"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff": {
-    "file": "assets/unicons-16.0bbe16bc.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff": {
+    "file": "assets/unicons-12.e7c130ee.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff": {
+    "file": "assets/unicons-15.ecb01ee3.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-18.woff": {
     "file": "assets/unicons-18.e2fb0f32.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-18.woff"
   },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff": {
+    "file": "assets/unicons-16.0bbe16bc.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff": {
+    "file": "assets/unicons-19.67bfa236.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff": {
+    "file": "assets/unicons-17.7ce47542.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff"
+  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff": {
     "file": "assets/unicons-20.c6751ced.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff": {
+    "file": "assets/unicons-2.278a2479.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff": {
+    "file": "assets/unicons-4.c5cc5199.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff": {
+    "file": "assets/unicons-6.f190733a.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-3.woff": {
     "file": "assets/unicons-3.18048250.woff",
@@ -235,53 +255,21 @@
     "file": "assets/unicons-7.ac6fc8ec.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.woff"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff": {
-    "file": "assets/unicons-17.7ce47542.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff": {
-    "file": "assets/unicons-19.67bfa236.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff": {
-    "file": "assets/unicons-4.c5cc5199.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-4.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff": {
-    "file": "assets/unicons-9.68c987b7.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff": {
-    "file": "assets/unicons-2.278a2479.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.woff"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-5.woff": {
+    "file": "assets/unicons-5.1db18968.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-5.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-8.woff": {
     "file": "assets/unicons-8.adbfb4c8.woff",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.woff"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff": {
-    "file": "assets/unicons-6.f190733a.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-6.woff"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-5.woff": {
-    "file": "assets/unicons-5.1db18968.woff",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-5.woff"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff": {
+    "file": "assets/unicons-9.68c987b7.woff",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.woff"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-1.ttf": {
     "file": "assets/unicons-1.7c4cf5a1.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-1.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-12.ttf": {
-    "file": "assets/unicons-12.c7925270.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-15.ttf": {
-    "file": "assets/unicons-15.149526fc.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-10.ttf": {
-    "file": "assets/unicons-10.ccecadeb.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-0.ttf": {
     "file": "assets/unicons-0.c2d4c6ad.ttf",
@@ -291,97 +279,101 @@
     "file": "assets/unicons-14.be26f9c9.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-14.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-11.ttf": {
-    "file": "assets/unicons-11.4e72cf59.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-16.ttf": {
-    "file": "assets/unicons-16.94514def.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.ttf"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-10.ttf": {
+    "file": "assets/unicons-10.ccecadeb.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-13.ttf": {
     "file": "assets/unicons-13.4e9020d3.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-13.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-20.ttf": {
-    "file": "assets/unicons-20.5a2c0730.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.ttf"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-11.ttf": {
+    "file": "assets/unicons-11.4e72cf59.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.ttf"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-12.ttf": {
+    "file": "assets/unicons-12.c7925270.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.ttf"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-15.ttf": {
+    "file": "assets/unicons-15.149526fc.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-18.ttf": {
     "file": "assets/unicons-18.2bd6a5b1.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-18.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-3.ttf": {
-    "file": "assets/unicons-3.845e1c9b.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.ttf"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-19.ttf": {
+    "file": "assets/unicons-19.5c5e1064.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.ttf"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-20.ttf": {
+    "file": "assets/unicons-20.5a2c0730.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-20.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-17.ttf": {
     "file": "assets/unicons-17.de3cff5a.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-7.ttf": {
-    "file": "assets/unicons-7.59f5aff8.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-19.ttf": {
-    "file": "assets/unicons-19.5c5e1064.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.ttf"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-9.ttf": {
-    "file": "assets/unicons-9.67502921.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.ttf"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-2.ttf": {
+    "file": "assets/unicons-2.b902132d.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-4.ttf": {
     "file": "assets/unicons-4.4bf22a83.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-4.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-2.ttf": {
-    "file": "assets/unicons-2.b902132d.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.ttf"
-  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-6.ttf": {
     "file": "assets/unicons-6.69a4deaa.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-6.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-8.ttf": {
-    "file": "assets/unicons-8.4d5242d7.ttf",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.ttf"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-16.ttf": {
+    "file": "assets/unicons-16.94514def.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.ttf"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-3.ttf": {
+    "file": "assets/unicons-3.845e1c9b.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.ttf"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-7.ttf": {
+    "file": "assets/unicons-7.59f5aff8.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-5.ttf": {
     "file": "assets/unicons-5.75d656c7.ttf",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-5.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-1.svg": {
-    "file": "assets/unicons-1.48f65c6e.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-1.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-8.ttf": {
+    "file": "assets/unicons-8.4d5242d7.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-8.ttf"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-12.svg": {
-    "file": "assets/unicons-12.80e505ee.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.svg"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-15.svg": {
-    "file": "assets/unicons-15.0504edd4.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-9.ttf": {
+    "file": "assets/unicons-9.67502921.ttf",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.ttf"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-10.svg": {
     "file": "assets/unicons-10.b8027ca7.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-10.svg"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-0.svg": {
-    "file": "assets/unicons-0.df6d7b6c.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-1.svg": {
+    "file": "assets/unicons-1.48f65c6e.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-1.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-14.svg": {
     "file": "assets/unicons-14.c765645e.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-14.svg"
   },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-0.svg": {
+    "file": "assets/unicons-0.df6d7b6c.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-0.svg"
+  },
   "node_modules/@iconscout/unicons/fonts/line/unicons-11.svg": {
     "file": "assets/unicons-11.ae1d79b5.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-11.svg"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-16.svg": {
-    "file": "assets/unicons-16.ea7cf1ce.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-15.svg": {
+    "file": "assets/unicons-15.0504edd4.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-15.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-20.svg": {
     "file": "assets/unicons-20.8dbdfd63.svg",
@@ -395,25 +387,21 @@
     "file": "assets/unicons-18.c53a6658.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-18.svg"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-3.svg": {
-    "file": "assets/unicons-3.9a14aeae.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.svg"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-7.svg": {
-    "file": "assets/unicons-7.0d8464a4.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.svg"
-  },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-17.svg": {
-    "file": "assets/unicons-17.ea56568b.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-12.svg": {
+    "file": "assets/unicons-12.80e505ee.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-12.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-19.svg": {
     "file": "assets/unicons-19.b4fa8b0c.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-19.svg"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-9.svg": {
-    "file": "assets/unicons-9.e0ffd9fc.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-17.svg": {
+    "file": "assets/unicons-17.ea56568b.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-17.svg"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-2.svg": {
+    "file": "assets/unicons-2.f866e194.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-4.svg": {
     "file": "assets/unicons-4.26d7464c.svg",
@@ -423,13 +411,25 @@
     "file": "assets/unicons-6.fe76b59a.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-6.svg"
   },
-  "node_modules/@iconscout/unicons/fonts/line/unicons-2.svg": {
-    "file": "assets/unicons-2.f866e194.svg",
-    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-2.svg"
+  "node_modules/@iconscout/unicons/fonts/line/unicons-16.svg": {
+    "file": "assets/unicons-16.ea7cf1ce.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-16.svg"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-3.svg": {
+    "file": "assets/unicons-3.9a14aeae.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-3.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-5.svg": {
     "file": "assets/unicons-5.c43249de.svg",
     "src": "node_modules/@iconscout/unicons/fonts/line/unicons-5.svg"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-7.svg": {
+    "file": "assets/unicons-7.0d8464a4.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-7.svg"
+  },
+  "node_modules/@iconscout/unicons/fonts/line/unicons-9.svg": {
+    "file": "assets/unicons-9.e0ffd9fc.svg",
+    "src": "node_modules/@iconscout/unicons/fonts/line/unicons-9.svg"
   },
   "node_modules/@iconscout/unicons/fonts/line/unicons-8.svg": {
     "file": "assets/unicons-8.d66cd196.svg",
@@ -441,7 +441,7 @@
     "isEntry": true
   },
   "resources/css/frontend/app.scss": {
-    "file": "assets/app.fc1a9611.css",
+    "file": "assets/app.90f372e3.css",
     "src": "resources/css/frontend/app.scss",
     "isEntry": true
   }

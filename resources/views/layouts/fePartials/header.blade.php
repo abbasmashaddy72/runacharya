@@ -14,12 +14,13 @@
         <!-- Logo container-->
         <a class="logo" href="{{ route('homepage') }}">
             <span class="inline-block dark:hidden">
-                <img src="{{ url('storage/' . get_static_option('logo')) }}" class="l-dark" height="24" alt="" />
-                <img src="{{ url('storage/' . get_static_option('logo')) }}" class="l-light" height="24"
+                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="l-dark" height="24"
+                    alt="" />
+                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="l-light" height="24"
                     alt="" />
             </span>
-            <img src="{{ url('storage/' . get_static_option('logo')) }}" height="24" class="hidden dark:inline-block"
-                alt="" />
+            <img src="{{ asset('storage/' . get_static_option('logo')) }}" height="24"
+                class="hidden dark:inline-block" alt="" />
         </a>
 
         <!-- End Logo container-->

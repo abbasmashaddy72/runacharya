@@ -31,7 +31,7 @@
                     @if ($image)
                         <span class="block w-20 h-20">
                             <img class="w-full rounded-full"
-                                src="{{ $isUploaded ? $image->temporaryUrl() : url('storage/' . $image) }}" />
+                                src="{{ $isUploaded ? $image->temporaryUrl() : asset('storage/' . $image) }}" />
                         </span>
                     @endif
                 </div>

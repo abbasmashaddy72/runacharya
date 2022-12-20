@@ -14,7 +14,7 @@
                     <div>
                         @if ($image)
                             <span class="block w-20 h-20">
-                                <img class="w-full rounded-full" src="{{ url('storage/' . $image) }}" />
+                                <img class="w-full rounded-full" src="{{ asset('storage/' . $image) }}" />
                             </span>
                         @endif
                     </div>

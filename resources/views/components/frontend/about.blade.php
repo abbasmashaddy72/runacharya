@@ -6,10 +6,10 @@
     <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
         <div class="md:col-span-5">
             <div class="relative">
-                <img src="{{ url('storage/' . get_static_option('about_image')) }}" class="mx-auto" alt="" />
+                <img src="{{ asset('storage/' . get_static_option('about_image')) }}" class="mx-auto" alt="" />
                 <div class="absolute left-0 right-0 text-center bottom-2/4 translate-y-2/4">
                     <a href="{{ get_static_option('about_video') }}" data-type="youtube" data-id="fKSBVIKbcAg"
-                        class="inline-flex items-center justify-center w-20 h-20 text-indigo-600 bg-white rounded-full shadow-lg lightbox dark:shadow-gray-700 dark:bg-slate-900">
+                        class="inline-flex items-center justify-center w-20 h-20 text-indigo-600 bg-white rounded-full shadow-lg dark:shadow-gray-700 dark:bg-slate-900">
                         <i class="inline-flex items-center justify-center text-2xl uil uil-play"></i>
                     </a>
                 </div>
@@ -18,7 +18,7 @@
         <!--end col-->
         <div class="md:col-span-7">
             <div class="lg:ml-4">
-                <p class="max-w-xl text-slate-400">
+                <p class="max-w-xl text-slate-400 whitespace-pre-line">
                     {{ get_static_option('description') }}
                 </p>
                 <a href="{{ route('book_appointment') }}"
