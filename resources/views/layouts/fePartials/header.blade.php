@@ -14,13 +14,12 @@
         <!-- Logo container-->
         <a class="logo" href="{{ route('homepage') }}">
             <span class="inline-block dark:hidden">
-                <img src="{{ asset('frontend/assets/hospitallogo/logoblue.png') }}" class="l-dark" height="24"
-                    alt="" />
-                <img src="{{ asset('frontend/assets/hospitallogo/logoblue.png') }}" class="l-light" height="24"
+                <img src="{{ url('storage/' . get_static_option('logo')) }}" class="l-dark" height="24" alt="" />
+                <img src="{{ url('storage/' . get_static_option('logo')) }}" class="l-light" height="24"
                     alt="" />
             </span>
-            <img src="{{ asset('frontend/assets/hospitallogo/logoblue.png') }}" height="24"
-                class="hidden dark:inline-block" alt="" />
+            <img src="{{ url('storage/' . get_static_option('logo')) }}" height="24" class="hidden dark:inline-block"
+                alt="" />
         </a>
 
         <!-- End Logo container-->
@@ -41,7 +40,7 @@
         <!--button Start-->
         <ul class="mb-0 list-none buy-button">
             <li class="inline pl-1 mb-0">
-                <a href="https://www.facebook.com/NeopolisMedicalCenter" target="_blank">
+                <a href="{{ '//' . get_static_option('fb_url') }}" target="_blank">
                     <div class="login-btn-primary">
                         <span
                             class="text-white bg-indigo-600 border-indigo-600 rounded-full btn btn-icon hover:bg-indigo-700 hover:border-indigo-700"><i
@@ -55,10 +54,10 @@
                 </a>
             </li>
             <li class="inline pl-1 mb-0">
-                <a href="https://www.instagram.com/neopolisclinics/" target="_blank">
+                <a href="{{ '//' . get_static_option('instagram_url') }}" target="_blank">
                     <div class="login-btn-primary">
                         <span
-                            class="text-white border-red-600 rounded-full btn btn-icon logo-instagram hover:bg-red-700 hover:border-red-700"><i
+                            class="text-white bg-red-600 border-red-600 rounded-full btn btn-icon logo-instagram hover:bg-red-700 hover:border-red-700"><i
                                 data-feather="instagram" class="w-6 h-6"></i></span>
                     </div>
                     <div class="login-btn-light">
@@ -69,7 +68,7 @@
                 </a>
             </li>
             <li class="inline pl-1 mb-0">
-                <a href="https://twitter.com/Neopolisclinics?t=W7mbl-CdGO-v_z5ZT4QycA&s=09" target="_blank">
+                <a href="{{ '//' . get_static_option('twitter_url') }}" target="_blank">
                     <div class="login-btn-primary">
                         <span
                             class="text-white rounded-full btn btn-icon bg-sky-600 hover:bg-sky-700 border-sky-600 hover:border-sky-700"><i

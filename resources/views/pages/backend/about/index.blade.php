@@ -28,6 +28,10 @@
                     <x-textarea name="description" value="{{ $description }}" />
                 </x-label>
 
+                <x-label>Short Description
+                    <x-textarea name="short_description" value="{{ $short_description }}" />
+                </x-label>
+
                 <button type="submit" class="mr-2 shadow-md btn btn-primary">{{ __('Update') }}</button>
             </x-form>
         </div>

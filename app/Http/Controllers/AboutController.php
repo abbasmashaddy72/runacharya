@@ -12,11 +12,13 @@ class AboutController extends Controller
         $image = get_static_option('about_image');
         $video = get_static_option('about_video');
         $description = get_static_option('description');
+        $short_description = get_static_option('short_description');
 
         return view('pages.backend.about.index', compact([
             'image',
             'video',
-            'description'
+            'description',
+            'short_description'
         ]));
     }
 
@@ -25,6 +27,7 @@ class AboutController extends Controller
         $image = get_static_option('about_image');
         $video = get_static_option('about_video');
         $description = get_static_option('description');
+        $short_description = get_static_option('short_description');
 
         if ($image != $request->image && !empty($request->image)) {
             $image = $request->image->store('about', 'public');
@@ -37,6 +40,10 @@ class AboutController extends Controller
 
         if ($description != $request->description) {
             set_static_option('description', $request->description);
+        }
+
+        if ($short_description != $request->short_description) {
+            set_static_option('short_description', $request->short_description);
         }
 
         return redirect()->route('admin.about.index');

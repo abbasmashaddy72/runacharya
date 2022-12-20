@@ -7,26 +7,24 @@
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
                             <a href="#" class="text-[22px] focus:outline-none">
-                                <img src="{{ asset('frontend/assets/hospitallogo/logowhite.png') }}" alt="" />
+                                <img src="{{ url('storage/' . get_static_option('logo')) }}" alt="" />
                             </a>
-                            <p class="text-gray-300">
-                                A Unit of Neopolis Medical Services LLP
-                            </p>
+                            <p class="text-gray-300">{{ get_static_option('short_description') }}</p>
                             <ul class="mt-6 list-none">
                                 <li class="inline">
-                                    <a href="https://www.facebook.com/NeopolisMedicalCenter"
+                                    <a href="{{ '//' . get_static_option('fb_url') }}"
                                         class="border border-gray-800 rounded-md btn btn-icon btn-sm hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
                                         <i data-feather="facebook" class="w-4 h-4"></i>
                                     </a>
                                 </li>
                                 <li class="inline">
-                                    <a href="https://www.instagram.com/neopolisclinics/"
+                                    <a href="{{ '//' . get_static_option('instagram_url') }}"
                                         class="border border-gray-800 rounded-md btn btn-icon btn-sm hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
                                         <i data-feather="instagram" class="w-4 h-4"></i>
                                     </a>
                                 </li>
                                 <li class="inline">
-                                    <a href="https://twitter.com/Neopolisclinics?t=W7mbl-CdGO-v_z5ZT4QycA&s=09"
+                                    <a href="{{ '//' . get_static_option('twitter_url') }}"
                                         class="border border-gray-800 rounded-md btn btn-icon btn-sm hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600">
                                         <i data-feather="twitter" class="w-4 h-4"></i>
                                     </a>

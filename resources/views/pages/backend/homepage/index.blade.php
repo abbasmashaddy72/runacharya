@@ -10,15 +10,27 @@
 
         <div class="py-12">
             <x-form action="{{ route('admin.homepage.update') }}" has-files>
-                <x-file-upload name="hero_image" label="Hero Image">
-                    <div>
-                        @if ($hero_image)
-                            <span class="block w-20 h-20">
-                                <img class="w-full rounded-full" src="{{ url('storage/' . $hero_image) }}" />
-                            </span>
-                        @endif
-                    </div>
-                </x-file-upload>
+                <div class="flex justify-around">
+                    <x-file-upload name="hero_image" label="Hero Image">
+                        <div>
+                            @if ($hero_image)
+                                <span class="block w-20 h-20">
+                                    <img class="w-full rounded-full" src="{{ url('storage/' . $hero_image) }}" />
+                                </span>
+                            @endif
+                        </div>
+                    </x-file-upload>
+
+                    <x-file-upload name="logo" label="Logo">
+                        <div>
+                            @if ($logo)
+                                <span class="block w-20 h-20">
+                                    <img class="w-full rounded-full" src="{{ url('storage/' . $logo) }}" />
+                                </span>
+                            @endif
+                        </div>
+                    </x-file-upload>
+                </div>
 
                 <p class="text-lg font-semibold leading-tight text-gray-800">Hero Feature 1</p>
 

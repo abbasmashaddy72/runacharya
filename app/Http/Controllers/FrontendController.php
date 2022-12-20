@@ -2,19 +2,50 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
+use App\Models\Service;
+use App\Models\Testimonial;
+
 class FrontendController extends Controller
 {
     public function __construct()
     {
-        view()->share('', '');
-        view()->share('', '');
-        view()->share('', '');
-        view()->share('', '');
+        view()->share('logo', get_static_option('logo'));
+        view()->share('fb_url', get_static_option('fb_url'));
+        view()->share('twitter_url', get_static_option('twitter_url'));
+        view()->share('instagram_url', get_static_option('instagram_url'));
+        view()->share('short_description', get_static_option('short_description'));
     }
 
     public function index()
     {
-        return view('pages.frontend.index');
+        $hero_image = get_static_option('hero_image');
+
+        $feature_1['hero_feature_text_1'] = get_static_option('hero_feature_text_1');
+        $feature_1['hero_feature_icon_1'] = get_static_option('hero_feature_icon_1');
+        $feature_1['hero_feature_url_1'] = get_static_option('hero_feature_url_1');
+
+        $feature_2['hero_feature_text_2'] = get_static_option('hero_feature_text_2');
+        $feature_2['hero_feature_icon_2'] = get_static_option('hero_feature_icon_2');
+        $feature_2['hero_feature_url_2'] = get_static_option('hero_feature_url_2');
+
+        $feature_3['hero_feature_text_3'] = get_static_option('hero_feature_text_3');
+        $feature_3['hero_feature_icon_3'] = get_static_option('hero_feature_icon_3');
+        $feature_3['hero_feature_url_3'] = get_static_option('hero_feature_url_3');
+
+        $feature = ['feature_1' => $feature_1, 'feature_2' => $feature_2, 'feature_3' => $feature_3];
+
+        $services = Service::get()->groupBy('department.title');
+        $doctors = Doctor::get();
+        $testimonials = Testimonial::with('doctor')->get()->take(10);
+
+        return view('pages.frontend.index', compact([
+            'hero_image',
+            'feature',
+            'services',
+            'doctors',
+            'testimonials'
+        ]));
     }
 
     public function about_us()

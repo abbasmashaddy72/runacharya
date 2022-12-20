@@ -10,6 +10,7 @@ class HomepageController extends Controller
     {
         view()->share('title', 'Home Page');
         $hero_image = get_static_option('hero_image');
+        $logo = get_static_option('logo');
 
         $hero_feature_text_1 = get_static_option('hero_feature_text_1');
         $hero_feature_icon_1 = get_static_option('hero_feature_icon_1');
@@ -25,6 +26,7 @@ class HomepageController extends Controller
 
         return view('pages.backend.homepage.index', compact([
             'hero_image',
+            'logo',
             'hero_feature_text_1',
             'hero_feature_icon_1',
             'hero_feature_url_1',
@@ -40,6 +42,7 @@ class HomepageController extends Controller
     public function update(Request $request)
     {
         $hero_image = get_static_option('hero_image');
+        $logo = get_static_option('logo');
 
         $hero_feature_text_1 = get_static_option('hero_feature_text_1');
         $hero_feature_icon_1 = get_static_option('hero_feature_icon_1');
@@ -56,6 +59,11 @@ class HomepageController extends Controller
         if ($hero_image != $request->hero_image && !empty($request->hero_image)) {
             $hero_image = $request->hero_image->store('hero', 'public');
             set_static_option('hero_image', $hero_image);
+        }
+
+        if ($logo != $request->logo && !empty($request->logo)) {
+            $logo = $request->logo->store('logo', 'public');
+            set_static_option('logo', $logo);
         }
 
         if ($hero_feature_text_1 != $request->hero_feature_text_1) {
