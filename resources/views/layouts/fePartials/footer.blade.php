@@ -83,17 +83,17 @@
 <!-- Footer End -->
 
 <!-- Back to top -->
-<a href="#" onclick="topFunction()" id="back-to-top"
-    class="fixed z-10 hidden text-lg leading-9 text-center text-white bg-indigo-600 rounded-full back-to-top bottom-5 right-5 h-9 w-9"><i
+<a href="#" id="back-to-top"
+    class="back-to-top fixed hidden text-lg rounded-full z-50 bottom-5 right-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"><i
         class="uil uil-arrow-up"></i></a>
 <!-- Back to top -->
 
 <!-- Switcher -->
-<div class="fixed top-1/4 -right-1 z-3">
+<div class="fixed top-1/4 -right-1 z-50">
     <span class="relative inline-block rotate-90">
-        <input type="checkbox" class="absolute opacity-0 checkbox" id="chk" />
+        <input type="checkbox" class="checkbox opacity-0 absolute" id="chk" />
         <label
-            class="flex items-center justify-between h-8 p-1 rounded-full shadow cursor-pointer label bg-slate-900 dark:bg-white dark:shadow-gray-700 w-14"
+            class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8"
             for="chk">
             <i class="uil uil-moon text-[20px] text-yellow-500"></i>
             <i class="uil uil-sun text-[20px] text-yellow-500"></i>

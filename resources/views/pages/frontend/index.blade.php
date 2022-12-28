@@ -15,20 +15,20 @@
     <section class="relative py-16 bg-gray-50 dark:bg-slate-800 md:py-24">
         <div class="container">
             <div class="grid justify-center grid-cols-1">
-                <div class="relative z-10 -mt-44">
+                <div class="relative -mt-36">
                     <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-[24px]">
                         @for ($i = 1; $i <= count($feature); $i++)
                             <div
-                                class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow bg-blue-600 group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
-                                <div
+                                class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900  bg-gradient-to-r to-blue-600 from-emerald-400">
+                                {{-- <div
                                     class="flex items-center justify-center w-16 h-16 mx-auto text-2xl text-indigo-600 align-middle rounded-lg shadow-sm bg-indigo-600/5 dark:shadow-gray-700">
                                     <img
                                         src="{{ asset('storage/' . $feature['feature_' . $i]['hero_feature_icon_' . $i]) }}">
-                                </div>
+                                </div> --}}
 
-                                <div class="content mt-7">
+                                <div class="content">
                                     <a href="{{ $feature['feature_' . $i]['hero_feature_url_' . $i] }}"
-                                        class="text-lg font-medium title h5 hover:text-indigo-600">
+                                        class="text-lg font-medium title h5 hover:text-gray-900">
                                         {{ $feature['feature_' . $i]['hero_feature_text_' . $i] }}
                                     </a>
                                 </div>
@@ -94,13 +94,13 @@
                 @foreach ($doctors as $item)
                     <div class="lg:col-span-4 md:col-span-6">
                         <div
-                            class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow home-doctors hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900">
+                            class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow home-doctors hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900 bg-gradient-to-r from-blue-400 to-emerald-400">
                             <div
-                                class="items-center justify-center h-[45px] min-w-[100px] -rotate-50 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                                <img class="bg-red-900" src="{{ asset('storage/' . $item->image) }}">
+                                class="flex items-center justify-center h-[45px] min-w-[50px] -rotate-50 text-indigo-600 text-center rounded-full mr-3">
+                                <img src="{{ asset('storage/' . $item->image) }}">
                             </div>
                             <a href="{{ route('doctors') }}">
-                                <div class="flex-1 text-gray-600">
+                                <div class="flex-1 text-gray-900">
                                     <h4 class="mb-0 text-lg font-medium">{{ $item->name }}</h4>
                                     <p>{{ $item->degree }}</p>
                                     <p>{{ $item->specialty }}</p>
@@ -111,11 +111,12 @@
                 @endforeach
             </div>
             <!--end contanier-->
+        </div>
     </section>
     <!--end section-->
     <!-- End -->
-    <section class="py-16 mt-2 bg-gray-50 dark:bg-slate-800 md:py-24">
-        <div class="container md:md:py-24 py-11">
+    <section class="py-16 dark:bg-slate-800 md:py-24">
+        <div class="container">
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3 class="mb-4 text-2xl font-semibold leading-normal md:text-3xl md:leading-normal">
                     WHAT OUR PATIENTS SAYS

@@ -8,6 +8,7 @@ Alpine.start();
 
 import "./components/plugins.init";
 import "./components/feather.js";
+import "./custom";
 
 import { tns } from "tiny-slider";
 window.tns = tns;

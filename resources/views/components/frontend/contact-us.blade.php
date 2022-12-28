@@ -1,4 +1,4 @@
-<section class="relative py-16 md:py-24">
+<section class="relative bg-gray-50 py-16 md:py-24">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
             <div class="px-6 mt-6 text-center">
