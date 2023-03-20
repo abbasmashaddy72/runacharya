@@ -66,13 +66,3 @@
 </section>
 <!--end section-->
 <!-- End Section-->
-
-<div class="relative container-fluid">
-    <div class="grid grid-cols-1">
-        <div class="w-full leading-[0] border-0">
-            <iframe src="{{ get_static_option('embed_map_link') }}" style="border:0" class="w-full h-[500px]"
-                allowfullscreen></iframe>
-        </div>
-    </div>
-    <!--end grid-->
-</div>

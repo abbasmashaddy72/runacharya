@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Doctor;
+use App\Models\Blog;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DoctorSeeder extends Seeder
+class BlogSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class DoctorSeeder extends Seeder
      */
     public function run()
     {
-        Doctor::factory()->count(rand(10, 50))->create();
+        Blog::factory()->count(rand(10, 50))->create();
     }
 }

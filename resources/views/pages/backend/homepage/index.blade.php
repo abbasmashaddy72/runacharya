@@ -21,6 +21,14 @@
                         </div>
                     </x-file-upload>
 
+                    <x-label>Hero Title
+                        <x-input name="hero_title" value="{{ $hero_title }}" type="text" />
+                    </x-label>
+
+                    <x-label>Hero Description
+                        <x-textarea name="hero_description" value="{{ $hero_description }}" />
+                    </x-label>
+
                     <x-file-upload name="logo" label="Logo">
                         <div>
                             @if ($logo)

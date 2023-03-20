@@ -11,15 +11,8 @@ class Testimonial extends Model
     use HasFactory;
 
     protected $fillable = [
-        'doctor_id',
         'name',
         'rating',
         'message'
     ];
-
-    public function doctor(): BelongsTo
-    {
-        // Or: return $this->belongsTo(ServiceDepartment::class);
-        return $this->belongsTo(Doctor::class, 'doctor_id');
-    }
 }

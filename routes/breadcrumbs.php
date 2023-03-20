@@ -33,10 +33,10 @@ Breadcrumbs::for('contact.index', function (Generator $trail) {
     $trail->push('Contact Us', route('admin.contact.index'));
 });
 
-// Application > Doctors
-Breadcrumbs::for('doctors.index', function (Generator $trail) {
+// Application > Blogs
+Breadcrumbs::for('blogs.index', function (Generator $trail) {
     $trail->parent('#');
-    $trail->push('Doctors', route('admin.doctors.index'));
+    $trail->push('Blogs', route('admin.blogs.index'));
 });
 
 // Application > HomePage

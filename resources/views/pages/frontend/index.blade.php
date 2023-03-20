@@ -1,30 +1,50 @@
 <x-front-layout>
     <!-- Start Hero -->
-    <section class="relative block h-screen swiper-slider-hero" id="home">
-        <div class="flex items-center py-24 overflow-hidden swiper-slide md:py-24">
-            <div class="slide-inner slide-bg-image md:px-2 px-2 flex items-center bg-center bg-no-repeat ;"
-                data-background="{{ asset('storage/' . $hero_image) }}">
-                <div class="absolute inset-0"></div>
+    <section style="background-image: url({{ asset('storage/' . $hero_image) }})"
+        class="relative table w-full py-36 lg:py-64 bg-no-repeat bg-center">
+        <div class="absolute inset-0 bg-black opacity-75"></div>
+        <div class="container">
+            <div class="grid grid-cols-1 mt-10">
+                <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6 mt-3">
+                    {{ get_static_option('hero_title') }}
+                </h1>
+                <p class="text-white/60 text-lg max-w-xl">{{ get_static_option('hero_description') }}</p>
+
+                <div class="mt-8">
+                    <a href="{{ route('book_appointment') }}"
+                        class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Book
+                        Appointment</a>
+                </div>
             </div>
+            <!--end grid-->
         </div>
-        <!-- end swiper-slide -->
+        <!--end container-->
     </section>
+    <!--end section-->
+    <div class="relative">
+        <div
+            class="shape absolute right-0 sm:-bottom-px -bottom-[2px] left-0 overflow-hidden text-white dark:text-slate-900">
+            <svg class="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
     <!-- Hero End -->
 
     <!-- FEATURES START -->
     <section class="relative py-16 bg-gray-50 dark:bg-slate-800 md:py-24">
         <div class="container">
             <div class="grid justify-center grid-cols-1">
-                <div class="relative -mt-36">
+                <div class="relative -mt-40 lg:-mt-60">
                     <div class="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-[24px]">
                         @for ($i = 1; $i <= count($feature); $i++)
                             <div
                                 class="p-6 text-center text-white transition-all duration-500 ease-in-out rounded-lg shadow group md:px-4 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900  bg-gradient-to-r to-blue-600 from-emerald-400">
-                                {{-- <div
+                                <div
                                     class="flex items-center justify-center w-16 h-16 mx-auto text-2xl text-indigo-600 align-middle rounded-lg shadow-sm bg-indigo-600/5 dark:shadow-gray-700">
                                     <img
                                         src="{{ asset('storage/' . $feature['feature_' . $i]['hero_feature_icon_' . $i]) }}">
-                                </div> --}}
+                                </div>
 
                                 <div class="content">
                                     <a href="{{ $feature['feature_' . $i]['hero_feature_url_' . $i] }}"
@@ -57,7 +77,24 @@
                     </h3>
                 </div>
 
-                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 mt-8 gap-[30px]">
+                    @foreach ($key as $key_item)
+                        <div class="text-center md:px-6">
+                            <div
+                                class="w-20 h-20 bg-indigo-600/5 text-indigo-600 rounded-3xl text-3xl flex align-middle justify-center items-center shadow-sm dark:shadow-gray-800 mx-auto">
+                                <img class="height-[45px]" src="{{ asset('storage/' . $key_item->icon) }}">
+                            </div>
+
+                            <div class="content mt-7">
+                                <a href="{{ route('service_single', ['data' => $key_item->id]) }}"
+                                    class="title h5 text-lg font-medium hover:text-indigo-600">{{ $key_item->name }}</a>
+                                <p class="text-slate-800 dark:text-slate-200 mt-3">{{ $key_item->description }}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                {{-- <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                     @foreach ($key as $key_item)
                         <div class="lg:col-span-4 md:col-span-6">
                             <div
@@ -72,7 +109,7 @@
                             </div>
                         </div>
                     @endforeach
-                </div>
+                </div> --}}
             @endforeach
         </div>
         <!--end contanier-->
@@ -86,20 +123,50 @@
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3
                     class="mb-6 text-2xl font-medium leading-normal text-black md:text-3xl md:leading-normal dark:text-white">
-                    DOCTORS
+                    Blogs
                 </h3>
             </div>
             <!--end grid-->
-            <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
-                @foreach ($doctors as $item)
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-4 mx-auto">
+                @foreach ($blogs as $item)
+                    <div class="w-full px-4 flex flex-col">
+                        <div class="mb-10 group wow fadeInUp border-gray-200 border-2 p-4 rounded-lg shadow-testimonial flex-1"
+                            data-wow-delay=".1s">
+                            <div class="rounded overflow-hidden mb-8">
+                                <a href="{{ route('blog_single', ['data' => $item->id]) }}" class="block">
+                                    <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->title }}"
+                                        class="w-full transition group-hover:scale-125 group-hover:rotate-6 h-56 object-cover" />
+                                </a>
+                            </div>
+                            <div>
+                                <div class="flex justify-end">
+                                    <span
+                                        class="bg-indigo-600 rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
+                                        {{ $item->created_at->diffForHumans() }}
+                                    </span>
+                                </div>
+                                <h3>
+                                    <a href="{{ route('blog_single', ['data' => $item->id]) }}"
+                                        class="font-semibold teloginxt-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
+                                        {{ $item->title }}
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            {{-- <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                @foreach ($blogs as $item)
                     <div class="lg:col-span-4 md:col-span-6">
                         <div
-                            class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow home-doctors hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900 bg-gradient-to-r from-blue-400 to-emerald-400">
+                            class="flex items-center p-3 text-white transition-all duration-500 ease-in-out bg-white rounded-md shadow hover:scale-105 dark:shadow-gray-700 hover:shadow-md dark:hover:shadow-gray-700 dark:bg-slate-900 bg-gradient-to-r from-blue-400 to-emerald-400">
                             <div
                                 class="flex items-center justify-center h-[45px] min-w-[50px] -rotate-50 text-indigo-600 text-center rounded-full mr-3">
                                 <img src="{{ asset('storage/' . $item->image) }}">
                             </div>
-                            <a href="{{ route('doctors') }}">
+                            <a href="{{ route('blogs') }}">
                                 <div class="flex-1 text-gray-900">
                                     <h4 class="mb-0 text-lg font-medium">{{ $item->name }}</h4>
                                     <p>{{ $item->degree }}</p>
@@ -109,7 +176,7 @@
                         </div>
                     </div>
                 @endforeach
-            </div>
+            </div> --}}
             <!--end contanier-->
         </div>
     </section>
@@ -135,7 +202,7 @@
                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                                         <path fill="#4f46e5" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
                                     </svg>
-                                    <p class="text-slate-400">" {{ $item->message }} "</p>
+                                    <p class="text-slate-800 dark:text-slate-200">" {{ $item->message }} "</p>
                                     @for ($i = 1; $i <= $item->rating; $i++)
                                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                                             class="w-6 h-6 inline text-amber-400 fill-current">
@@ -156,7 +223,6 @@
 
                                 <div class="mt-5 text-center">
                                     <h6 class="mt-2 font-semibold">{{ $item->name }}</h6>
-                                    <span class="text-sm text-slate-400">{{ $item->doctor->specialty }}</span>
                                 </div>
                             </div>
                         </div>

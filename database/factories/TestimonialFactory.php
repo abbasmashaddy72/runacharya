@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Doctor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +17,6 @@ class TestimonialFactory extends Factory
     public function definition()
     {
         return [
-            'doctor_id' => Doctor::pluck('id')[$this->faker->numberBetween(1, Doctor::count() - 1)],
             'name' => fake()->name(),
             'rating' => random_int(1, 5),
             'message' => fake()->realText()

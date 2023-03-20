@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('doctors', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('degree');
-            $table->string('specialty');
-            $table->string('reg_no');
-            $table->string('image');
+            $table->string('title');
+            $table->string('image')->nullable();
+            $table->text('tags')->nullable();
+            $table->text('excerpt')->nullable();
+            $table->longText('description')->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('doctors');
+        Schema::dropIfExists('blogs');
     }
 };

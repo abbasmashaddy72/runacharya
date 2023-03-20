@@ -19,7 +19,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'FrontendController@index')->name('homepage');
     Route::get('about_us', 'FrontendController@about_us')->name('about_us');
     Route::get('services', 'FrontendController@services')->name('services');
-    Route::get('doctors', 'FrontendController@doctors')->name('doctors');
+    Route::get('service/{data}', 'FrontendController@service_single')->name('service_single');
+    Route::get('blogs', 'FrontendController@blogs')->name('blogs');
+    Route::get('blog/{data}', 'FrontendController@blog_single')->name('blog_single');
     Route::get('gallery', 'FrontendController@gallery')->name('gallery');
     Route::get('contact_us', 'FrontendController@contact_us')->name('contact_us');
     Route::get('book_appointment', 'FrontendController@book_appointment')->name('book_appointment');
@@ -49,7 +51,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['web', 'au
         \UniSharp\LaravelFilemanager\Lfm::routes();
     });
 
-    Route::get('doctors', 'DoctorController@index')->name('doctors.index');
+    Route::get('blogs', 'BlogController@index')->name('blogs.index');
 
     Route::get('homepage', 'HomepageController@index')->name('homepage.index');
     Route::post('homepage-update', 'HomepageController@update')->name('homepage.update');

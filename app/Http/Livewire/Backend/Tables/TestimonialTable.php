@@ -32,11 +32,6 @@ class TestimonialTable extends LivewireDatatable
                 ->searchable()
                 ->filterable(),
 
-            Column::name('doctor.name')
-                ->label('Dr. Name')
-                ->searchable()
-                ->filterable(),
-
             NumberColumn::name('rating')
                 ->searchable()
                 ->filterable(),

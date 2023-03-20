@@ -14,13 +14,13 @@
         <!-- Logo container-->
         <a class="logo pl-0" href="{{ route('homepage') }}">
             <span class="inline-block dark:hidden">
-                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="l-dark" height="24"
+                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="h-20 l-dark" height="24"
                     alt="" />
-                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="l-light" height="24"
+                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="h-20 l-light" height="24"
                     alt="" />
             </span>
             <img src="{{ asset('storage/' . get_static_option('logo')) }}" height="24"
-                class="hidden dark:inline-block" alt="" />
+                class="h-20 hidden dark:inline-block" alt="" />
         </a>
 
         <!-- End Logo container-->
@@ -107,7 +107,7 @@
                 </li>
 
                 <li class="m-0">
-                    <a href="{{ route('doctors') }}">DOCTORS</a>
+                    <a href="{{ route('blogs') }}">BLOGS</a>
                 </li>
 
                 <li class="m-0">

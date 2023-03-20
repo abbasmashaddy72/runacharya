@@ -10,10 +10,9 @@ class TestimonialModal extends ModalComponent
     // Set Values
     public $testimonial_id;
     //Model Values
-    public $doctor_id, $name, $rating, $message;
+    public $name, $rating, $message;
 
     protected $rules = [
-        'doctor_id' => 'required',
         'name' => 'required',
         'rating' => 'required',
         'message' => ''
@@ -43,7 +42,6 @@ class TestimonialModal extends ModalComponent
     {
         if (!empty($this->testimonial_id)) {
             $data = Testimonial::findOrFail($this->testimonial_id);
-            $this->doctor_id = $data->doctor_id;
             $this->name = $data->name;
             $this->rating = $data->rating;
             $this->message = $data->message;

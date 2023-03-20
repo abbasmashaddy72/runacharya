@@ -1,6 +1,6 @@
 <x-backend.modal form-action="save">
     <x-slot name="title">
-        @if ($doctor_id)
+        @if ($name)
             Update
         @else
             Add
@@ -10,10 +10,6 @@
 
     <x-slot name="content">
         <div class="grid">
-            <x-label>Select Department
-                <x-select wire:model='doctor_id' name="doctor_id" label="Select Doctor" :options="getKeyValues('Doctor', 'name', 'id')" />
-            </x-label>
-
             <x-label>Name
                 <x-input wire:model='name' name="name" label="Name" type="text" />
             </x-label>

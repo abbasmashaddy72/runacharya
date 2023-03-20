@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('doctor_id')->constrained('doctors')->onUpdate('cascade')->onDelete('cascade');
             $table->string('name');
             $table->integer('rating')->default(5);
             $table->longText('message');

@@ -1,29 +1,29 @@
 <x-backend.modal form-action="save">
     <x-slot name="title">
-        @if ($doctor_id)
+        @if ($blog_id)
             Update
         @else
             Add
         @endif
-        {{ __(' Doctor') }}
+        {{ __(' Blog') }}
     </x-slot>
 
     <x-slot name="content">
         <div class="grid-cols-3 gap-2 sm:grid">
-            <x-label>Name
-                <x-input wire:model='name' name="name" label="Name" type="text" />
+            <x-label>Title
+                <x-input wire:model='title' name="title" label="Title" type="text" />
             </x-label>
 
-            <x-label>Degree
-                <x-input wire:model='degree' name="degree" label="Degree" type="text" />
+            <x-label>Tags
+                <x-input wire:model='tags' name="tags" label="Tags" type="text" />
             </x-label>
 
-            <x-label>Specialty
-                <x-input wire:model='specialty' name="specialty" label="Specialty" type="text" />
+            <x-label>Excerpt
+                <x-textarea wire:model='excerpt' name="excerpt" label="Excerpt" type="text" />
             </x-label>
 
-            <x-label>Reg. No.
-                <x-input wire:model='reg_no' name="reg_no" label="Reg. No." type="text" />
+            <x-label>Description
+                <x-textarea wire:model='description' name="description" label="Description" type="text" />
             </x-label>
 
             <x-file-upload wire:model='image' name="image" label="Image" :display-upload-progress="true">

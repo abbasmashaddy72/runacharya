@@ -6,8 +6,9 @@
                 <div class="py-[60px] px-0">
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
                         <div class="lg:col-span-4 md:col-span-12">
-                            <a href="#" class="text-[22px] focus:outline-none">
-                                <img src="{{ asset('storage/' . get_static_option('logo')) }}" alt="" />
+                            <a href="#" class="focus:outline-none">
+                                <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="h-20"
+                                    alt="" />
                             </a>
                             <p class="text-gray-300">{{ get_static_option('short_description') }}</p>
                             <ul class="mt-6 list-none">
@@ -52,9 +53,9 @@
                                         <i class="uil uil-angle-right-b me-1"></i>Services</a>
                                 </li>
                                 <li class="mt-[10px]">
-                                    <a href="{{ route('doctors') }}"
+                                    <a href="{{ route('blogs') }}"
                                         class="text-gray-300 duration-500 ease-in-out hover:text-gray-400">
-                                        <i class="uil uil-angle-right-b me-1"></i>Doctors</a>
+                                        <i class="uil uil-angle-right-b me-1"></i>BLOGS</a>
                                 </li>
                                 <li class="mt-[10px]">
                                     <a href="{{ route('gallery') }}"
@@ -69,6 +70,18 @@
                             </ul>
                         </div>
                         <!--end col-->
+
+                        <div class="lg:col-span-6 md:col-span-4">
+                            <div class="relative container-fluid">
+                                <div class="grid grid-cols-1">
+                                    <div class="w-full leading-[0] border-0">
+                                        <iframe src="{{ get_static_option('embed_map_link') }}" style="border:0"
+                                            class="w-full h-[350px]" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!--end grid-->
+                            </div>
+                        </div>
                     </div>
                     <!--end grid-->
                 </div>

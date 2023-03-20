@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Doctor extends Model
+class Blog extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'degree',
-        'specialty',
-        'reg_no',
-        'image'
+        'title',
+        'image',
+        'tags',
+        'excerpt',
+        'description',
     ];
 }

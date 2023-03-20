@@ -60,10 +60,10 @@ class AppLayout extends Component
                 'title' => 'Services',
                 'route_name' => 'admin.services.index',
             ],
-            'doctor' => [
+            'blog' => [
                 'icon' => 'award',
-                'title' => 'Doctors',
-                'route_name' => 'admin.doctors.index',
+                'title' => 'Blogs',
+                'route_name' => 'admin.blogs.index',
             ],
             'testimonial' => [
                 'icon' => 'chevrons-up',

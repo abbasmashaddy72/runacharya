@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Doctor;
+use App\Models\Blog;
 use App\Models\Service;
 use App\Models\Testimonial;
 use Illuminate\Support\Arr;
@@ -38,14 +38,14 @@ class FrontendController extends Controller
         $feature = ['feature_1' => $feature_1, 'feature_2' => $feature_2, 'feature_3' => $feature_3];
 
         $services = Service::get()->groupBy('department.title');
-        $doctors = Doctor::get();
-        $testimonials = Testimonial::with('doctor')->get()->take(10);
+        $blogs = Blog::get()->take(4);
+        $testimonials = Testimonial::get()->take(10);
 
         return view('pages.frontend.index', compact([
             'hero_image',
             'feature',
             'services',
-            'doctors',
+            'blogs',
             'testimonials'
         ]));
     }
@@ -65,12 +65,31 @@ class FrontendController extends Controller
         return view('pages.frontend.services', compact('services'));
     }
 
-    public function doctors()
+    public function service_single(Service $data)
     {
-        view()->share('title', 'Doctors');
-        $doctors = Doctor::get();
+        /**
+         * @get('/service_single')
+         * @name('service_single')
+         * @middlewares('web')
+         */
+        view()->share('title', $data->name);
 
-        return view('pages.frontend.doctors', compact('doctors'));
+        return view('pages.frontend.service_single', compact('data'));
+    }
+
+    public function blogs()
+    {
+        view()->share('title', 'Blogs');
+        $data = Blog::paginate(8);
+
+        return view('pages.frontend.blogs', compact('data'));
+    }
+
+    public function blog_single(Blog $data)
+    {
+        view()->share('title', $data->title);
+
+        return view('pages.frontend.blog_single', compact('data'));
     }
 
     public function gallery()
