@@ -61,6 +61,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['web', 'au
     Route::get('booked-appointment-form', 'BookedAppointmentController@index')->name('booked-appointment-form.index');
 
     Route::get('testimonial', 'TestimonialController@index')->name('testimonials.index');
+
+    Route::post('image_upload', 'MiscellaneousController@image_upload')->name('ckeditor.upload');
 });
 
 require __DIR__ . '/auth.php';

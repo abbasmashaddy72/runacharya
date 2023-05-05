@@ -113,4 +113,23 @@
             </x-form>
         </div>
     </x-backend.content>
+
+    <x-backend.content>
+
+        <x-slot name="title">Sliders</x-slot>
+        <x-slot name="top_right_button">
+            <button onclick="Livewire.emit('openModal', 'backend.modals.sliders-modal')"
+                class="mr-2 shadow-md btn btn-primary">{{ __('Add') }}</button>
+        </x-slot>
+
+        <x-slot name="header">
+            <h2 class="text-xl font-semibold leading-tight text-gray-800">
+                {{ __('Sliders') }}
+            </h2>
+        </x-slot>
+
+        <div class="py-12">
+            @livewire('backend.tables.sliders-table')
+        </div>
+    </x-backend.content>
 </x-app-layout>

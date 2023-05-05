@@ -50,6 +50,11 @@ class BlogsModal extends ModalComponent
         $this->closeModal();
     }
 
+    public static function modalMaxWidth(): string
+    {
+        return '7xl';
+    }
+
     public function mount()
     {
         if (!empty($this->blog_id)) {

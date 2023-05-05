@@ -20,6 +20,7 @@
         "psr/simple-cache": "^1.0",
         "rawilk/laravel-breadcrumbs": "^4.0",
         "rawilk/laravel-form-components": "^7.1",
+        "spatie/laravel-medialibrary": "^10.0.0",
         "unisharp/laravel-filemanager": "^2.5",
         "wire-elements/modal": "^1.0"
     },

@@ -36,8 +36,12 @@
                         <x-input name="instagram_url" value="{{ $instagram_url }}" type="text" />
                     </x-label>
 
-                    <x-label>Embed Map Link(Directly from Google Maps Search, Share, Embed copy src link & paste)
-                        <x-input name="embed_map_link" value="{{ $embed_map_link }}" type="text" />
+                    <x-label>Embed Map Link 1(Directly from Google Maps Search, Share, Embed copy src link & paste)
+                        <x-input name="embed_map_link_1" value="{{ $embed_map_link_1 }}" type="text" />
+                    </x-label>
+
+                    <x-label>Embed Map Link 2(Directly from Google Maps Search, Share, Embed copy src link & paste)
+                        <x-input name="embed_map_link_2" value="{{ $embed_map_link_2 }}" type="text" />
                     </x-label>
                 </div>
 

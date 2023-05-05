@@ -31,7 +31,7 @@
     </script>
 @endpush
 <x-front-layout>
-    <section class="relative py-16 mt-3 bg-gray-50 dark:bg-slate-800 md:py-24">
+    {{-- <section class="relative py-16 mt-3 bg-gray-50 dark:bg-slate-800 md:py-24">
         <!-- Blog Details -->
         <div class="flex flex-wrap justify-center -mx-4">
             <div class="w-full px-4">
@@ -51,11 +51,11 @@
             </div>
         </div>
 
-        <div class="mb-8 ck-content">
-            {!! $data->description !!}
+        <div class="mb-8 px-36 ck-content">
+            {!! preg_replace('#<script(.*?)>(.*?)</script>#is', '', $data->description) !!}
         </div>
 
-        {{-- <div class="flex flex-wrap -mx-4">
+        <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4 mt-14 wow fadeInUp" data-wow-delay=".2s">
             <h2 class="font-semibold text-dark text-2xl sm:text-[28px] pb-5 relative">
                 Related Services
@@ -72,6 +72,35 @@
                 </div>
             @endforelse
         </div>
-    </div> --}}
+    </div>
+    </section> --}}
+
+    <section class="relative md:mt-24 mt-16" id="portfolio">
+        <div class="container" id="ivf">
+            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                <div class="lg:col-span-5 md:col-span-6">
+                    <div class="relative">
+                        <img src="{{ asset('storage/' . $data->icon) }}" class="rounded-full" alt="{{ $data->name }}">
+                        <div class="absolute top-0 left-0 -z-1">
+                            <img src="assets/images/illustrator/dots.svg" alt="{{ $data->name }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 md:col-span-6 mt-8 md:mt-0">
+                    <div class="lg:ml-5">
+                        <h6
+                            class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold text-center">
+                            {{ $data->name }}
+                        </h6>
+                        <p class="text-justify">
+                            {!! preg_replace('#<script(.*?)>(.*?)</script>#is', '', $data->description) !!}
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+
 </x-front-layout>

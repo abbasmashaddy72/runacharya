@@ -15,7 +15,8 @@ class ContactController extends Controller
         $fb_url = get_static_option('fb_url');
         $twitter_url = get_static_option('twitter_url');
         $instagram_url = get_static_option('instagram_url');
-        $embed_map_link = get_static_option('embed_map_link');
+        $embed_map_link_1 = get_static_option('embed_map_link_1');
+        $embed_map_link_2 = get_static_option('embed_map_link_2');
 
         return view('pages.backend.contact.index', compact([
             'contact_no',
@@ -24,7 +25,8 @@ class ContactController extends Controller
             'fb_url',
             'twitter_url',
             'instagram_url',
-            'embed_map_link'
+            'embed_map_link_1',
+            'embed_map_link_2'
         ]));
     }
 
@@ -36,7 +38,8 @@ class ContactController extends Controller
         $fb_url = get_static_option('fb_url');
         $twitter_url = get_static_option('twitter_url');
         $instagram_url = get_static_option('instagram_url');
-        $embed_map_link = get_static_option('embed_map_link');
+        $embed_map_link_1 = get_static_option('embed_map_link_1');
+        $embed_map_link_2 = get_static_option('embed_map_link_2');
 
         if ($contact_no != $request->contact_no) {
             set_static_option('contact_no', $request->contact_no);
@@ -56,9 +59,13 @@ class ContactController extends Controller
         if ($instagram_url != $request->instagram_url) {
             set_static_option('instagram_url', $request->instagram_url);
         }
-        if ($embed_map_link != $request->embed_map_link) {
-            set_static_option('embed_map_link', $request->embed_map_link);
+        if ($embed_map_link_1 != $request->embed_map_link_1) {
+            set_static_option('embed_map_link_1', $request->embed_map_link_1);
         }
+        if ($embed_map_link_2 != $request->embed_map_link_2) {
+            set_static_option('embed_map_link_2', $request->embed_map_link_2);
+        }
+
 
         return redirect()->route('admin.contact.index');
     }

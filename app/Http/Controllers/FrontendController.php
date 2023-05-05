@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Service;
+use App\Models\Slider;
 use App\Models\Testimonial;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
@@ -40,13 +41,15 @@ class FrontendController extends Controller
         $services = Service::get()->groupBy('department.title');
         $blogs = Blog::get()->take(4);
         $testimonials = Testimonial::get()->take(10);
+        $sliders = Slider::get();
 
         return view('pages.frontend.index', compact([
             'hero_image',
             'feature',
             'services',
             'blogs',
-            'testimonials'
+            'testimonials',
+            'sliders'
         ]));
     }
 
@@ -88,8 +91,9 @@ class FrontendController extends Controller
     public function blog_single(Blog $data)
     {
         view()->share('title', $data->title);
+        $related = Blog::whereNotIn('id', [$data->id])->limit(3)->get();
 
-        return view('pages.frontend.blog_single', compact('data'));
+        return view('pages.frontend.blog_single', compact('data', 'related'));
     }
 
     public function gallery()

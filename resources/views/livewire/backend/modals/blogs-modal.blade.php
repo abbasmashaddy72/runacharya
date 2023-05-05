@@ -22,10 +22,6 @@
                 <x-textarea wire:model='excerpt' name="excerpt" label="Excerpt" type="text" />
             </x-label>
 
-            <x-label>Description
-                <x-textarea wire:model='description' name="description" label="Description" type="text" />
-            </x-label>
-
             <x-file-upload wire:model='image' name="image" label="Image" :display-upload-progress="true">
                 <div>
                     @if ($image)
@@ -36,7 +32,12 @@
                     @endif
                 </div>
             </x-file-upload>
-            {{-- <x-toggle wire:model="status" label="Status" /> --}}
+        </div>
+        <div>
+            <x-label>Description
+                <x-backend.ckeditor id="bodyen" lang="EN" name="description" label="Description"
+                    wire:model='description' />
+            </x-label>
         </div>
     </x-slot>
 

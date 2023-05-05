@@ -39,10 +39,6 @@
 
         <!-- Blog Details -->
         <div class="flex flex-wrap justify-center -mx-4">
-            <div class="rounded overflow-hidden mb-8">
-                <img src="{{ asset('storage/' . $data->image) }}" alt="{{ $data->title }}"
-                    class="w-full transition group-hover:scale-125 group-hover:rotate-6 h-56 object-cover" />
-            </div>
             <div class="w-full px-4">
                 <div class="flex flex-col justify-center items-center -mx-4">
                     <div class="w-full px-4 lg:w-8/12">
@@ -65,12 +61,12 @@
                 <span class="h-[2px] bg-primary w-20 mb-10 inline-block"></span>
             </div>
             <!-- First Repeater -->
-            {{-- @foreach ($related as $item)
+            @foreach ($related as $item)
                 <div class="w-full md:w-1/2 lg:w-1/3 px-4 flex flex-col">
                     <div class="mb-10 group wow fadeInUp border-gray-200 border-2 p-4 rounded-lg shadow-testimonial flex-1"
                         data-wow-delay=".1s">
                         <div class="rounded overflow-hidden mb-8">
-                            <a href="{{ route('blog_single', ['id' => $item->id]) }}" class="block">
+                            <a href="{{ route('blog_single', ['data' => $item->id]) }}" class="block">
                                 <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->title }}"
                                     class="w-full transition group-hover:scale-125 group-hover:rotate-6 h-56 object-cover" />
                             </a>
@@ -81,13 +77,9 @@
                                     class="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
                                     {{ $item->created_at->diffForHumans() }}
                                 </span>
-                                <span
-                                    class="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-white mb-5">
-                                    {{ $item->team->name }}
-                                </span>
                             </div>
                             <h3>
-                                <a href="{{ route('blog_single', ['id' => $item->id]) }}"
+                                <a href="{{ route('blog_single', ['data' => $item->id]) }}"
                                     class="font-semibold teloginxt-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
                                     {{ $item->title }}
                                 </a>
@@ -98,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-            @endforeach --}}
+            @endforeach
         </div>
 
     </section>

@@ -36,7 +36,3 @@ window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 import { tns } from "tiny-slider/src/tiny-slider.js";
 
 window.tns = tns;
-
-import Swiper from "swiper";
-
-window.Swiper = Swiper;

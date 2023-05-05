@@ -1,11 +1,11 @@
 <!-- Footer Start -->
 <footer class="relative text-gray-200 footer bg-dark-footer dark:text-gray-200">
-    <div class="container">
+    <div class="container px-0">
         <div class="grid grid-cols-12">
             <div class="col-span-12">
                 <div class="py-[60px] px-0">
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
-                        <div class="lg:col-span-4 md:col-span-12">
+                        <div class="lg:col-span-3 md:col-span-12">
                             <a href="#" class="focus:outline-none">
                                 <img src="{{ asset('storage/' . get_static_option('logo')) }}" class="h-20"
                                     alt="" />
@@ -35,7 +35,7 @@
                         </div>
                         <!--end col-->
 
-                        <div class="lg:col-span-2 md:col-span-4">
+                        <div class="lg:col-span-1 md:col-span-4">
                             <ul class="mt-6 list-none footer-list">
                                 <li>
                                     <a href="{{ route('homepage') }}"
@@ -71,11 +71,22 @@
                         </div>
                         <!--end col-->
 
-                        <div class="lg:col-span-6 md:col-span-4">
+                        <div class="lg:col-span-4 md:col-span-4">
                             <div class="relative container-fluid">
                                 <div class="grid grid-cols-1">
                                     <div class="w-full leading-[0] border-0">
-                                        <iframe src="{{ get_static_option('embed_map_link') }}" style="border:0"
+                                        <iframe src="{{ get_static_option('embed_map_link_1') }}" style="border:0"
+                                            class="w-full h-[350px]" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!--end grid-->
+                            </div>
+                        </div>
+                        <div class="lg:col-span-4 md:col-span-4">
+                            <div class="relative container-fluid">
+                                <div class="grid grid-cols-1">
+                                    <div class="w-full leading-[0] border-0">
+                                        <iframe src="{{ get_static_option('embed_map_link_2') }}" style="border:0"
                                             class="w-full h-[350px]" allowfullscreen></iframe>
                                     </div>
                                 </div>
