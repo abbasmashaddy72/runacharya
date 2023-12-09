@@ -52,8 +52,8 @@ The project structure is similar to a typical Laravel application.
 
 ### Tailwind
 
-- `npm run dev-front` && `npm run dev-back` to compile css in local run both seprately for backend css and frontend css
-- `npm run prod-front` && `npm prod-back` to compile css for production run both seprately for backend css and frontend css
+- `npm run dev:front` && `npm run dev:back` to compile css in local run both seprately for backend css and frontend css
+- `npm run prod:front` && `npm prod:back` to compile css for production run both seprately for backend css and frontend css
 
 
 ## Commands
